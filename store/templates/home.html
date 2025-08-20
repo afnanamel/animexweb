@@ -1,0 +1,532 @@
+
+   
+   {% extends 'base.html' %} 
+    {% block content %}
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Consultancy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6e35016a61.js" crossorigin="anonymous"></script>
+    <style>
+        .poppins-font {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .metal {
+            font-family: "Metal Mania", system-ui;
+        }
+
+        /* Added smooth scrolling for better UX */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+    <!-- Hero Section -->
+ <section id="home" class="py-12 md:py-20 px-5 md:px-10">
+        <div class="flex flex-col md:flex-row  justify-between gap-10 mx-auto max-w-7xl">
+            <div class="w-full md:w-1/2">
+                <p class="text-blue-500 text-xs uppercase font-bold pb-4">
+                    Technology Related Consultancy
+                </p>
+                <h1 class="text-3xl md:text-5xl text-blue-950 font-extrabold leading-tight">
+                    We transform ideas into technology
+                </h1>
+                <p class="text-sm text-gray-600 py-6">
+                    We provide the most responsive and functional IT design for companies and businesses worldwide. Our
+                    expertise helps organizations leverage technology to drive innovation, improve efficiency, and
+                    achieve their business goals. We provide the most responsive and functional IT design for companies
+                    and businesses worldwide. Our
+                    expertise helps organizations leverage technology to drive innovation, improve efficiency, and
+                    achieve their business goals.
+                </p>
+                <h4 class="text-sm uppercase text-blue-800 font-semibold mb-6">
+                    Turning your vision into digital reality
+                </h4>
+                <button class="btn btn-primary px-8 text-white hover:bg-blue-700 transition">
+                    Get Started
+                </button>
+            </div>
+            <div class="w-full md:w-1/2 flex justify-center">
+                <img class="rounded-full h-64 w-64 md:h-96 md:w-96 object-cover shadow-lg" src="images/man1.jpg"
+                    alt="IT Consultant">
+            </div>
+        </div>
+    </section>
+
+
+      <!-- chooseus   -->
+      <section>
+        <div class="grid lg:grid-cols-2 sm:p-10">
+            <div>
+                <p class="text-blue-600 font-semibold uppercase">Reason to choose us</p>
+                <h1 class="font-medium text-4xl py-8">We provide truly prominent <br> IT solutions.</h1>
+                <p class="text-gray-500 text-sm py-5">Accelerate innovation with world-class tech teams We’ll match you
+                    to an
+                    entire remote <br> team of
+                    incredible freelance talent for all your software development needs.</p>
+                <div class="flex gap-5 items-center">
+                    <div class="p-3">
+                        <p class="text-gray-400 py-5 text-sm text-center
+                    ">signature</p>
+                        <p class="font-bold text-lg">Alen Morno sin</p>
+                        <p>CEO, Techwix</p>
+                    </div>
+
+                    <div class=" border-l-2 border-dotted pl-10">
+
+                        <div>
+                            <p>IT Management</p>
+                            <progress class="progress w-56" value="70" max="100"></progress>
+                        </div>
+                        <div>
+                            <p>Data Security</p><progress class="progress w-56" value="100" max="100"></progress>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="my-10">
+                <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" checked="checked" />
+                    <div class="collapse-title text-xl font-semibold border border-b ">How long it takes finished projects
+                        ?</div>
+                    <div class="collapse-content">
+                        <p class="text-gray-500">Accelerate innovation with world-class tech teams We’ll match you to an
+                            entire remote team of incredible freelance talent for all your software.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-base-200 my-5">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title text-xl font-semibold border border-b ">Support & policy rules?</div>
+                    <div class="collapse-content">
+                        <p class="text-gray-500">Accelerate innovation with world-class tech teams We’ll match you to an
+                            entire remote team of incredible freelance talent for all your software.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title text-xl font-semibold border border-b ">Can we get refund?</div>
+                    <div class="collapse-content">
+                        <p class="text-gray-500">Accelerate innovation with world-class tech teams We’ll match you to an
+                            entire remote team of incredible freelance talent for all your software.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about-us -->
+    <section class=" my-10">
+        <div class="flex items-center gap-20">
+            <div class="flex gap-5">
+                <div>
+                    <img src="/static/images/aboutus.jpg" alt="">
+                </div>
+                <div class="mt-20">
+                    <img class="rounded-xl" src="/static/images/aboutus2.jpg" alt="">
+                </div>
+            </div>
+            <div>
+                <p class="text-blue-600 font-medium uppercase">Who we are</p>
+                <h1 class="text-5xl font-medium py-5">Highly Tailored IT Design, <br> Management & <br> Support Services.</h1>
+                <p class="text-sm text-gray-500 py-3 ">Accelerate innovation with world-class tech teams We’ll match you
+                    to
+                    an entire <br> remote team of incredible freelance talent for all <br>your software development
+                    needs.</p>
+                <div class="flex items-center gap-10 my-5">
+                    <div>
+                        <h5 class="font-semibold text-xl">Our Mission</h5>
+                        <p class="text-sm text-gray-500 py-3 ">Accelerate innovation with <br> world-class tech teams. <br>
+                            We
+                            help businesses
+                            elevate their value.</p>
+                    </div>
+                    <div>
+                        <h5 class="font-semibold text-xl ">Our Philosophy</h5>
+                        <p class="text-sm text-gray-500 py-3 ">Accelerate innovation with <br> world-class tech teams. <br>
+                            We
+                            help businesses
+                            elevate their value.</p>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+     <!-- information-section -->
+  <section class="py-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
+      <!-- Card 1 -->
+      <div class="relative group overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+        <div class="h-80 sm:h-96 w-full overflow-hidden">
+          <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            src="/static/images/Rectangle 17.png" alt="Information Management System">
+        </div>
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        </div>
+        <div
+          class="absolute -bottom-6 -left-5 right-0 p-5 transition-all duration-300 transform translate-y-0 group-hover:translate-y-[-10px]">
+          <div class="bg-white p-5  shadow-lg">
+            <h2 class="card-title text-xl md:text-2xl border-l-4 border-blue-700 pl-3 mb-2">Information Management
+              System</h2>
+            <p class="max-h-0 overflow-hidden group-hover:max-h-40 transition-all duration-500 ease-in-out">
+              <span class="text-blue-800 block pt-2">
+                Accelerate innovation with world-class tech teams. We'll match you to an entire remote team.
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="relative group overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+        <div class="h-80 sm:h-96 w-full overflow-hidden">
+          <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            src="/static/images/Rectangle 17.png" alt="Information Management System">
+        </div>
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        </div>
+        <div
+          class="absolute -bottom-6 -left-5 right-0 p-5 transition-all duration-300 transform translate-y-0 group-hover:translate-y-[-10px]">
+          <div class="bg-white p-5  shadow-lg">
+            <h2 class="card-title text-xl md:text-2xl border-l-4 border-blue-700 pl-3 mb-2">Information Management
+              System</h2>
+            <p class="max-h-0 overflow-hidden group-hover:max-h-40 transition-all duration-500 ease-in-out">
+              <span class="text-blue-800 block pt-2">
+                Accelerate innovation with world-class tech teams. We'll match you to an entire remote team.
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="relative group overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+        <div class="h-80 sm:h-96 w-full overflow-hidden">
+          <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            src="/static/images/Rectangle 17.png" alt="Information Management System">
+        </div>
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        </div>
+        <div
+          class="absolute -bottom-6 -left-5 right-0 p-5 transition-all duration-300 transform translate-y-0 group-hover:translate-y-[-10px]">
+          <div class="bg-white p-5  shadow-lg">
+            <h2 class="card-title text-xl md:text-2xl border-l-4 border-blue-700 pl-3 mb-2">Information Management
+              System</h2>
+            <p class="max-h-0 overflow-hidden group-hover:max-h-40 transition-all duration-500 ease-in-out">
+              <span class="text-blue-800 block pt-2">
+                Accelerate innovation with world-class tech teams. We'll match you to an entire remote team.
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- recent-case-box -->
+  <section class="font-inter py-16 px-4 md:px-16 ">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">
+        Our recent <br>
+        <span class="text-blue-600">Case studies</span>
+    </h2>
+
+    <!-- Case Study 1 -->
+    <div class="flex my-10 ">
+        <div>
+            <img src="/static/images/Case-study__image (2).png" alt="Case Study 1"
+                class="w-full rounded-lg shadow-lg">
+        </div>
+        <div class=" bg-purple-50 rounded-xl p-5  border-purple-100 shadow-xl">
+            <h3 class="text-2xl font-semibold text-gray-800 my-5 ">Website Design for SCFC Canada</h3>
+            <p class="text-gray-600  leading-relaxed text-sm my-5">
+                Born out of a vision, a single-minded objective that puts service before anything else,
+                Swift <br> Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping
+                and logistics scenario. <br> Its meteoric rise stems out of a solid foundation. The management
+                boasts of over 20 years of rich and varied experience <br> in the shipping and freight forwarding
+                industry.
+            </p>
+            <a href="#">
+                <button
+                    class="inline-flex items-center gap-2 text-blue-600 px-4 py-2 rounded hover:bg-white transition">
+                    Read more <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Case Study 2 -->
+    <div class="flex my-10 ">
+        <div>
+            <img src="/static/images/Case-study__image (1).png" alt="Case Study 1"
+                class="w-full rounded-lg shadow-lg">
+        </div>
+        <div class=" bg-purple-50 rounded-xl p-5  border-purple-100 shadow-xl">
+            <h3 class="text-2xl font-semibold text-gray-800 my-5 ">Website Design for SCFC Canada</h3>
+            <p class="text-gray-600  leading-relaxed text-sm my-5">
+                Born out of a vision, a single-minded objective that puts service before anything else,
+                Swift <br> Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping
+                and logistics scenario. <br> Its meteoric rise stems out of a solid foundation. The management
+                boasts of over 20 years of rich and varied experience <br> in the shipping and freight forwarding
+                industry.
+            </p>
+            <a href="#">
+                <button
+                    class="inline-flex items-center gap-2 text-blue-600 px-4 py-2 rounded hover:bg-white transition">
+                    Read more <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Case Study 3 -->
+    <div class="flex my-10 ">
+        <div>
+            <img src="/static/images/Case-study__image.png" alt="Case Study 1"
+                class="w-full rounded-lg shadow-lg">
+        </div>
+        <div class=" bg-purple-50 rounded-xl p-5  border-purple-100 shadow-xl">
+            <h3 class="text-2xl font-semibold text-gray-800 my-5 ">Website Design for SCFC Canada</h3>
+            <p class="text-gray-600  leading-relaxed text-sm my-5">
+                Born out of a vision, a single-minded objective that puts service before anything else,
+                Swift <br> Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping
+                and logistics scenario. <br> Its meteoric rise stems out of a solid foundation. The management
+                boasts of over 20 years of rich and varied experience <br> in the shipping and freight forwarding
+                industry.
+            </p>
+            <a href="#">
+                <button
+                    class="inline-flex items-center gap-2 text-blue-600 px-4 py-2 rounded hover:bg-white transition">
+                    Read more <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <h4
+        class="text-blue-600 text-lg font-semibold cursor-pointer inline-flex items-center gap-2 hover:underline text-end">
+        Read more case studies <i class="fa-solid fa-chevron-right"></i>
+    </h4>
+</section>
+ <!-- development-section -->
+ <section >
+    <h1 class="text-3xl text-center">Our design and <br>
+        <span class="font-bold">development approach</span>
+    </h1>
+    <div class="grid lg:grid-cols-2 items-center gap-10 mx-20 my-20">
+        <div class="bg-white shadow-sm py-10 pl-5 rounded-xl flex gap-4 border border-purple-50"> 
+            <div>
+                <img class="bg-black rounded-xl p-2" src="/static/images/Rocket_perspective_matte.png" alt="">
+            </div>
+          <div>
+            <h3 class="text-2xl font-bold">UX Driven Engineering</h3>
+            <p class="text-sm text-gray-500 py-5">Unlike other companies, we are a UX first development company. <br> Projects are driven by designers and they
+                make sure <br> design and experiences translate to code.</p>
+          </div>
+           
+        </div>
+        <div class="bg-white shadow-sm py-10 pl-5 rounded-xl flex gap-4  border border-purple-50"> 
+            <div>
+                <img class="bg-blue-300 rounded-xl p-2" src="/static/images/Code_perspective_matte.png" alt="">
+            </div>
+          <div>
+            <h3 class="text-2xl font-bold">UX Driven Engineering</h3>
+            <p class="text-sm text-gray-500 py-5">Unlike other companies, we are a UX first development company. <br> Projects are driven by designers and they
+                make sure <br> design and experiences translate to code.</p>
+          </div>
+           
+        </div>
+        <div class="bg-white shadow-sm py-10 pl-5 rounded-xl flex gap-4  border border-purple-50"> 
+            <div>
+                <img class="bg-pink-400 rounded-xl p-2" src="/static/images/Heart_rate_perspective_matte.png" alt="">
+            </div>
+          <div>
+            <h3 class="text-2xl font-bold">UX Driven Engineering</h3>
+            <p class="text-sm text-gray-500 py-5">Unlike other companies, we are a UX first development company. <br> Projects are driven by designers and they
+                make sure <br> design and experiences translate to code.</p>
+          </div>
+           
+        </div>
+        <div class="bg-white shadow-sm py-10 pl-5 rounded-xl flex gap-4  border border-purple-50"> 
+            <div>
+                <img class="bg-green-900 rounded-xl p-2" src="/static/images/Shield_perspective_matte.png" alt="">
+            </div>
+          <div>
+            <h3 class="text-2xl font-bold">UX Driven Engineering</h3>
+            <p class="text-sm text-gray-500 py-5">Unlike other companies, we are a UX first development company. <br> Projects are driven by designers and they
+                make sure <br> design and experiences translate to code.</p>
+          </div>
+           
+        </div>
+        <div class="bg-white shadow-sm py-10 pl-5 rounded-xl flex gap-4  border border-purple-50"> 
+            <div>
+                <img class="bg-green-600 rounded-xl p-2" src="/static/images/Success_perspective_matte.png" alt="">
+            </div>
+          <div>
+            <h3 class="text-2xl font-bold">UX Driven Engineering</h3>
+            <p class="text-sm text-gray-500 py-5">Unlike other companies, we are a UX first development company. <br> Projects are driven by designers and they
+                make sure <br> design and experiences translate to code.</p>
+          </div>
+           
+        </div>
+        <div class="bg-white shadow-sm py-10 pl-5 rounded-xl flex gap-4  border border-purple-50"> 
+            <div>
+                <img class="bg-yellow-900 rounded-xl p-2" src="/static/images/Padlock_perspective_matte.png" alt="">
+            </div>
+          <div>
+            <h3 class="text-2xl font-bold">UX Driven Engineering</h3>
+            <p class="text-sm text-gray-500 py-5">Unlike other companies, we are a UX first development company. <br> Projects are driven by designers and they
+                make sure <br> design and experiences translate to code.</p>
+          </div>
+           
+        </div>
+       
+    </div>
+   
+
+</section>
+<!-- why chhose us -->
+<section class=" my-10">
+    <p class="text-blue-600 text-center uppercase text-sm">REASON TO CHOOSE US</p>
+    <h1 class="text-5xl font-medium text-center my-10">We provide truly prominent IT  <br>solutions.</h1>
+    <div class="grid grid-cols-3 gap-10 hover:cursor-pointer">
+        <div class="card bg-base-100 w-96 shadow-xl ">
+            <figure>
+             <img src="/static/images/chooseus.png" alt="">
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Infrastructure <br>Technology</h2>
+              <p>Accelerate innovation with world-class tech teams We’ll match you to an entire.</p>
+              <div class="card-actions justify-end">
+               
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-xl ">
+            <figure>
+             <img src="/static/images/c-2.png" alt="">
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">IT Consultancy & <br>solution</h2>
+              <p>Accelerate innovation with world-class tech teams We’ll match you to an entire.</p>
+              <div class="card-actions justify-end">
+               
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-xl ">
+            <figure>
+             <img src="/static/images/c3.png" alt="">
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Cloud managed <br> services</h2>
+              <p>Accelerate innovation with world-class tech teams We’ll match you to an entire.</p>
+              <div class="card-actions justify-end">
+               
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-xl ">
+            <figure>
+             <img src="/static/images/c4.png" alt="">
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Blockchain <br> technology</h2>
+              <p>Accelerate innovation with world-class tech teams We’ll match you to an entire.</p>
+              <div class="card-actions justify-end">
+               
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure>
+             <img src="/static/images/c5.png" alt="">
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Advanced Technology</h2>
+              <p>Accelerate innovation with world-class tech teams We’ll match you to an entire.</p>
+              <div class="card-actions justify-end">
+               
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure>
+             <img src="/static/images/c6.png" alt="">
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Ideas for high <br> return investment</h2>
+              <p>Accelerate innovation with world-class tech teams We’ll match you to an entire.</p>
+              <div class="card-actions justify-end">
+               
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure>
+             <img src="/static/images/c7.png" alt="">
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Fully high IT <br> Managment</h2>
+              <p>Accelerate innovation with world-class tech teams We’ll match you to an entire.</p>
+              <div class="card-actions justify-end">
+               
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+             <img src="/static/images/c8.png" alt="">
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Fully high <br>IT Managment</h2>
+              <p>Accelerate innovation with world-class tech teams We’ll match you to an entire.</p>
+              <div class="card-actions justify-end">
+               
+              </div>
+            </div>
+          </div>
+
+    </div>
+</section>
+<!-- vedio section -->
+<section>
+    <div class="flex items-center gap-20 shadow-sm py-5 pl-10 rounded-xl h-96 ">
+        <div>
+            <h1 class="text-2xl ">
+                Leading companies trust us <span class="font-bold text-2xl"> <br>to develop software
+            </h1></span>
+            <p class="text-sm my-8">We <span class="text-purple-600 "> add development capacity </span>to tech teams.
+                <br> Our
+                value isn’t limited to building teams but is equally distributed across the project lifecycle. <br> We
+                are a
+                custom software development company that guarantees the successful delivery of your project.
+            </p>
+            <p class="text-purple-600"> <a href="#">See more Informations <i class="fa-solid fa-arrow-right "></i></a>
+            </p>
+        </div>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VU74s-XAn7M?si=s6DxGHCB4JtSKUIj"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </div>
+</section>
+
+ {% endblock %} 
