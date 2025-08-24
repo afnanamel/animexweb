@@ -1,61 +1,90 @@
-<!-- footer -->
-<section>
- <footer class="footer bg-slate-900 text-white p-10">
+
+
+<footer class="bg-slate-900 text-white font-sans">
+  <div class="container mx-auto p-10 grid grid-cols-1 md:grid-cols-4 gap-10">
+    <!-- Logo & Description -->
     <div>
-      <h1 class="font-bold text-3xl">Trip Satisfy</h1>
-      <p class="py-5 text-sm text-pink-50">Accelerate innovation with world-class <br>tech teams We’ll match you to an entire <br>remote team of
-        incredible <br>freelance talent.</p>
-        <div class="grid grid-flow-col gap-4 text-lg">
-          <a class="bg-white h-10 w-10 rounded-full text-center pt-2">
-            <i class="fa-brands fa-facebook-f text-blue-600"></i>
-          </a>
-          <a class="bg-white h-10 w-10 rounded-full text-center pt-2">
-            <i class="fa-brands fa-square-instagram text-blue-600"></i>
-          </a>
-          <a class="bg-white h-10 w-10 rounded-full text-center pt-2">
-            <i class="fa-brands fa-twitter text-blue-600"></i>
-          </a>
-          <a class="bg-white h-10 w-10 rounded-full text-center pt-2">
-            <i class="fa-brands fa-linkedin-in text-blue-600"></i>
-          </a>
-        </div>
+      <h1 class="font-bold text-2xl">AnimexWeb Ltd</h1>
+      <p class="py-5 text-sm text-pink-50">
+        Accelerate innovation with world-class <br>
+        tech teams. We’ll match you to an entire <br>
+        remote team of incredible <br>freelance talent.
+      </p>
+   
     </div>
+
+    <!-- Useful Links -->
     <nav>
-      <h6 class="footer-title">Useful Links</h6>
-      <a class="link  link-hover ">Home</a>
-      <a class="link link-hover">About Company</a>
-      <a class="link link-hover">Our Services</a>
-      <a class="link link-hover">Why Choose Us</a>
-      <a class="link link-hover">Contact Us</a>
-    </nav>
-    <nav>
-      <h6 class="footer-title"> Our Services</h6>
-      <a class="link link-hover">Infrastructure Technology</a>
-      <a class="link link-hover">Blockchain technology</a>
-      <a class="link link-hover">Advanced Technology</a>   
-      <a class="link link-hover">Data Management</a>
-      <a class="link link-hover">Security Management</a>
+      <h6 class="footer-title font-semibold mb-4">Useful Links</h6>
+      <a class="link link-hover block py-1">Home</a>
+      <a class="link link-hover block py-1">About Company</a>
+      <a class="link link-hover block py-1">Our Services</a>
+      <a class="link link-hover block py-1">Why Choose Us</a>
+      <a class="link link-hover block py-1">Contact Us</a>
     </nav>
 
+    <!-- Services -->
     <nav>
-      <h6 class="footer-title">Contact Information</h6>
-      <a class="link link-hover"> <i class="fa-regular fa-address-book text-blue-600 text-lg px-2"> </i>  89898989</a>
-      <a class="link link-hover"> <i class="fa-solid fa-envelope text-blue-600 text-lg px-2"> </i>  z.email.com</a>
-      <a class="link link-hover"> <i class="fa-solid fa-location-dot text-blue-600 text-lg px-2"> </i>east-rajanazar-345</a>
-      
+      <h6 class="footer-title font-semibold mb-4">Our Services</h6>
+      <a class="link link-hover block py-1">Infrastructure Technology</a>
+      <a class="link link-hover block py-1">Blockchain Technology</a>
+      <a class="link link-hover block py-1">Advanced Technology</a>
+      <a class="link link-hover block py-1">Data Management</a>
+      <a class="link link-hover block py-1">Security Management</a>
     </nav>
-  </footer>
-  <footer class="footer footer-center bg-slate-900 text-white py-7 border-t border-gray-700">
-    <aside >
-      <p>Copyright©2025 -All right reserved by trip-satisfy</p>
-    </aside>
-  </footer>
-</section>
-    <style>
+
+    <!-- Contact Info -->
+    <nav>
+      <h6 class="footer-title font-semibold mb-4">Contact Information</h6>
+      <a class="link link-hover block py-1">
+        <i class="fa-regular fa-address-book text-blue-600 text-lg px-2"></i> 010101029385
+      </a>
+      <a class="link link-hover block py-1">
+        <i class="fa-solid fa-envelope text-blue-600 text-lg px-2"></i>animexwebltd@gmail.com
+      </a>
+      <a class="link link-hover block py-1">
+        <i class="fa-solid fa-location-dot text-blue-600 text-lg px-2"></i>Niketon,road-6,building-348
+      </a>
+
+         <div class="flex gap-2 text-lg pt-5">
+        <a class="bg-white h-10 w-10 rounded-full text-center pt-2">
+          <i class="fa-brands fa-facebook-f text-blue-600"></i>
+        </a>
+        <a class="bg-white h-10 w-10 rounded-full text-center pt-2">
+          <i class="fa-brands fa-square-instagram text-blue-600"></i>
+        </a>
+        <a class="bg-white h-10 w-10 rounded-full text-center pt-2">
+          <i class="fa-brands fa-twitter text-blue-600"></i>
+        </a>
+        <a class="bg-white h-10 w-10 rounded-full text-center pt-2">
+          <i class="fa-brands fa-linkedin-in text-blue-600"></i>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Bottom Footer -->
+  <div class="footer-center text-xs bg-slate-900 text-white py-3 border-t border-gray-700">
+    <div class="container mx-auto text-center">
+      <p>Copyright © 2025 - All rights reserved by "AnimexWeb Ltd"</p>
+    </div>
+  </div>
+</footer>
+
+
+  <style>
         .poppins-font {
             font-family: 'Poppins', sans-serif;
         }
-        
+                .slide {
+            transition: transform 0.5s ease, opacity 0.5s ease;
+        }
+        .slider-container {
+            scrollbar-width: none; /* Firefox */
+        }
+        .slider-container::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Edge */
+        }
         @keyframes slide-slow {
             0% {
                 transform: translateX(0);
@@ -79,5 +108,91 @@
             }
         }
     </style>
-</body>
-</html>
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slider = document.querySelector('.slider-container > div');
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.slider-dot');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            
+            let currentPosition = 0;
+            let slidesPerView = calculateSlidesPerView();
+            
+            // Calculate how many slides to show based on screen width
+            function calculateSlidesPerView() {
+                if (window.innerWidth >= 1024) {
+                    return 3; // lg screen
+                } else if (window.innerWidth >= 768) {
+                    return 2; // md screen
+                } else {
+                    return 1; // sm screen
+                }
+            }
+            
+            // Update slider position
+            function updateSliderPosition() {
+                const slideWidth = slides[0].offsetWidth + 24; // width + gap
+                slider.style.transform = `translateX(-${currentPosition * slideWidth}px)`;
+                
+                // Update active dot
+                dots.forEach((dot, index) => {
+                    if (index === currentPosition) {
+                        dot.classList.add('bg-blue-500', 'active-dot');
+                        dot.classList.remove('bg-gray-300');
+                    } else {
+                        dot.classList.remove('bg-blue-500', 'active-dot');
+                        dot.classList.add('bg-gray-300');
+                    }
+                });
+            }
+            
+            // Next slide
+            function nextSlide() {
+                const maxPosition = Math.ceil(slides.length / slidesPerView) - 1;
+                if (currentPosition < maxPosition) {
+                    currentPosition++;
+                    updateSliderPosition();
+                }
+            }
+            
+            // Previous slide
+            function prevSlide() {
+                if (currentPosition > 0) {
+                    currentPosition--;
+                    updateSliderPosition();
+                }
+            }
+            
+            // Go to specific slide
+            function goToSlide(index) {
+                const maxPosition = Math.ceil(slides.length / slidesPerView) - 1;
+                if (index >= 0 && index <= maxPosition) {
+                    currentPosition = index;
+                    updateSliderPosition();
+                }
+            }
+            
+            // Event listeners
+            nextBtn.addEventListener('click', nextSlide);
+            prevBtn.addEventListener('click', prevSlide);
+            
+            dots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    const index = parseInt(dot.getAttribute('data-index'));
+                    goToSlide(index);
+                });
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                slidesPerView = calculateSlidesPerView();
+                currentPosition = 0; // Reset to first slide on resize
+                updateSliderPosition();
+            });
+            
+            // Initialize slider
+            updateSliderPosition();
+        });
+    </script>
+
