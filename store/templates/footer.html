@@ -72,127 +72,191 @@
 </footer>
 
 
-  <style>
-        .poppins-font {
-            font-family: 'Poppins', sans-serif;
-        }
-                .slide {
-            transition: transform 0.5s ease, opacity 0.5s ease;
-        }
-        .slider-container {
-            scrollbar-width: none; /* Firefox */
-        }
-        .slider-container::-webkit-scrollbar {
-            display: none; /* Chrome, Safari, Edge */
-        }
-        @keyframes slide-slow {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-        
-        .animate-slide-slow {
-            animation: slide-slow 60s linear infinite;
-        }
-        
-        .hover\:animation-pause:hover {
-            animation-play-state: paused;
-        }
-        
-        @media (max-width: 640px) {
-            .animate-slide-slow {
-                animation: slide-slow 40ms linear infinite;
-            }
-        }
-    </style>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
      <script>
+        //client success
         document.addEventListener('DOMContentLoaded', function() {
-            const slider = document.querySelector('.slider-container > div');
-            const slides = document.querySelectorAll('.slide');
+            const sliderTrack = document.getElementById('slider-track');
             const dots = document.querySelectorAll('.slider-dot');
-            const prevBtn = document.getElementById('prev-btn');
-            const nextBtn = document.getElementById('next-btn');
             
             let currentPosition = 0;
-            let slidesPerView = calculateSlidesPerView();
+            let autoSlideInterval;
+            const slideWidth = document.querySelector('.slide').offsetWidth;
+            const totalSlides = 4;
+            const slidesToShow = 2;
+            const maxPosition = -(slideWidth * (totalSlides / slidesToShow - 1));
             
-            // Calculate how many slides to show based on screen width
-            function calculateSlidesPerView() {
-                if (window.innerWidth >= 1024) {
-                    return 3; // lg screen
-                } else if (window.innerWidth >= 768) {
-                    return 2; // md screen
-                } else {
-                    return 1; // sm screen
-                }
+            // Initialize auto slider
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(() => {
+                    nextSlide();
+                }, 3000); // 3 seconds
             }
             
-            // Update slider position
-            function updateSliderPosition() {
-                const slideWidth = slides[0].offsetWidth + 24; // width + gap
-                slider.style.transform = `translateX(-${currentPosition * slideWidth}px)`;
+            // Stop auto slider
+            function stopAutoSlide() {
+                clearInterval(autoSlideInterval);
+            }
+            
+            // Next slide
+            function nextSlide() {
+                if (currentPosition > maxPosition) {
+                    currentPosition -= slideWidth * slidesToShow;
+                } else {
+                    currentPosition = 0; // Reset to first slide
+                }
+                updateSlider();
+            }
+            
+            // Update slider position and dots
+            function updateSlider() {
+                sliderTrack.style.transform = `translateX(${currentPosition}px)`;
                 
-                // Update active dot
+                // Update dots
+                const activeIndex = Math.abs(currentPosition / (slideWidth * slidesToShow));
                 dots.forEach((dot, index) => {
-                    if (index === currentPosition) {
-                        dot.classList.add('bg-blue-500', 'active-dot');
+                    if (index === activeIndex) {
+                        dot.classList.add('bg-purple-500');
                         dot.classList.remove('bg-gray-300');
                     } else {
-                        dot.classList.remove('bg-blue-500', 'active-dot');
+                        dot.classList.remove('bg-purple-500');
                         dot.classList.add('bg-gray-300');
                     }
                 });
             }
             
-            // Next slide
-            function nextSlide() {
-                const maxPosition = Math.ceil(slides.length / slidesPerView) - 1;
-                if (currentPosition < maxPosition) {
-                    currentPosition++;
-                    updateSliderPosition();
-                }
-            }
-            
-            // Previous slide
-            function prevSlide() {
-                if (currentPosition > 0) {
-                    currentPosition--;
-                    updateSliderPosition();
-                }
-            }
-            
-            // Go to specific slide
-            function goToSlide(index) {
-                const maxPosition = Math.ceil(slides.length / slidesPerView) - 1;
-                if (index >= 0 && index <= maxPosition) {
-                    currentPosition = index;
-                    updateSliderPosition();
-                }
-            }
-            
-            // Event listeners
-            nextBtn.addEventListener('click', nextSlide);
-            prevBtn.addEventListener('click', prevSlide);
-            
+            // Dot navigation
             dots.forEach(dot => {
-                dot.addEventListener('click', () => {
-                    const index = parseInt(dot.getAttribute('data-index'));
-                    goToSlide(index);
+                dot.addEventListener('click', function() {
+                    const index = parseInt(this.getAttribute('data-index'));
+                    currentPosition = -(index * slideWidth * slidesToShow);
+                    updateSlider();
+                    // Restart auto slider after manual navigation
+                    stopAutoSlide();
+                    startAutoSlide();
                 });
             });
             
-            // Handle window resize
-            window.addEventListener('resize', () => {
-                slidesPerView = calculateSlidesPerView();
-                currentPosition = 0; // Reset to first slide on resize
-                updateSliderPosition();
+            // Pause on hover
+            const sliderContainer = document.querySelector('.slider-container');
+            sliderContainer.addEventListener('mouseenter', stopAutoSlide);
+            sliderContainer.addEventListener('mouseleave', startAutoSlide);
+            
+            // Initialize
+            updateSlider();
+            startAutoSlide();
+        });
+        
+         document.addEventListener('DOMContentLoaded', function() {
+            const slider = document.getElementById('slider');
+            const prevButton = document.getElementById('prev');
+            const nextButton = document.getElementById('next');
+            const indicators = document.querySelectorAll('.indicator');
+            
+            let currentIndex = 0;
+            const totalSlides = 3;
+            
+            // Function to update slider position
+            function updateSlider() {
+                slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+                
+                // Update indicators
+                indicators.forEach((indicator, index) => {
+                    if (index === currentIndex) {
+                        indicator.classList.add('bg-indigo-600');
+                        indicator.classList.remove('bg-gray-300');
+                    } else {
+                        indicator.classList.remove('bg-indigo-600');
+                        indicator.classList.add('bg-gray-300');
+                    }
+                });
+            }
+            
+            // Next slide
+            nextButton.addEventListener('click', function() {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateSlider();
             });
             
-            // Initialize slider
-            updateSliderPosition();
+            // Previous slide
+            prevButton.addEventListener('click', function() {
+                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                updateSlider();
+            });
+            
+            // Indicator clicks
+            indicators.forEach(indicator => {
+                indicator.addEventListener('click', function() {
+                    currentIndex = parseInt(this.getAttribute('data-index'));
+                    updateSlider();
+                });
+            });
+            
+            // Auto slide every 5 seconds
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateSlider();
+            }, 5000);
+        });
+
+         document.addEventListener('DOMContentLoaded', function () {
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 20,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // Responsive breakpoints
+                breakpoints: {
+                    // when window width is >= 768px
+                    768: {
+                        slidesPerView: 1,
+                        spaceBetween: 30
+                    }
+                }
+            });
+        });
+        // real time script
+              document.addEventListener('DOMContentLoaded', () => {
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200; // The lower the faster
+            
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = target / speed;
+                
+                if (count < target) {
+                    const updateCount = () => {
+                        const currentCount = +counter.innerText;
+                        const newCount = Math.ceil(currentCount + increment);
+                        
+                        if (newCount < target) {
+                            counter.innerText = newCount;
+                            setTimeout(updateCount, 1);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    
+                    updateCount();
+                } else {
+                    counter.innerText = target;
+                }
+            });
         });
     </script>
+    
 

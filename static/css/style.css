@@ -1,0 +1,84 @@
+:root{
+      
+        .poppins-font {
+            font-family: 'Poppins', sans-serif;
+        }
+                .slide {
+            transition: transform 0.5s ease, opacity 0.5s ease;
+        }
+        .slider-container {
+            scrollbar-width: none; /* Firefox */
+        }
+        .slider-container::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Edge */
+        }
+        /* our story style */
+        /* information style */
+        @keyframes slide-slow {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        
+        .animate-slide-slow {
+            animation: slide-slow 60s linear infinite;
+        }
+        
+        .hover\:animation-pause:hover {
+            animation-play-state: paused;
+        }
+        
+        @media (max-width: 640px) {
+            .animate-slide-slow {
+                animation: slide-slow 40ms linear infinite;
+            }
+        }
+        /* aboutus satisfied clients */
+          .testimonial-card {
+            backdrop-filter: blur(10px);
+        }
+
+        .swiper {
+            padding-bottom: 60px !important;
+        }
+
+        .swiper-pagination-bullet {
+            background: rgba(255, 255, 255, 0.3) !important;
+            width: 12px !important;
+            height: 12px !important;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: white !important;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: white !important;
+            background: rgba(255, 255, 255, 0.3);
+            width: 40px !important;
+            height: 40px !important;
+            border-radius: 50%;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+            font-size: 20px !important;
+        }
+
+        .swiper-button-prev:hover,
+        .swiper-button-next:hover {
+            background: white;
+            color: #1e40af !important;
+        }
+
+
+        
+    
+}
