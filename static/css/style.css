@@ -106,5 +106,23 @@
         html {
             scroll-behavior: smooth;
         }
-    
+          /* Additional styles for the half-image hover effect */
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .portfolio-item .caption {
+            transition: all 0.3s ease;
+            z-index: 2;
+        }
+        
+        .portfolio-item:hover .caption {
+            opacity: 0;
+        }
+        
+        /* Make sure the description only covers half the image */
+        .portfolio-item.group:hover .caption {
+            transform: translateY(-50%);
+        }
 }
