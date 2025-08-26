@@ -78,7 +78,33 @@
             color: #1e40af !important;
         }
 
+/* portfolio style */
+        .portfolio-item {
+            transition: all 0.3s ease;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .caption {
+            transition: all 0.3s ease;
+            opacity: 0;
+        }
+        .portfolio-item:hover .caption {
+            opacity: 1;
+        }
+        /*  */
+         .poppins-font {
+            font-family: "Poppins", sans-serif;
+        }
 
-        
+        .metal {
+            font-family: "Metal Mania", system-ui;
+        }
+
+        /* Added smooth scrolling for better UX */
+        html {
+            scroll-behavior: smooth;
+        }
     
 }
