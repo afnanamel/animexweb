@@ -1,246 +1,277 @@
-  {% extends 'base.html' %} 
-    {% block content %}
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% load static %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLOG-GRID</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+{% block content %}
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/6e35016a61.js" crossorigin="anonymous"></script>
-    <style>
-        .poppins-font {
-            font-family: "Poppins", sans-serif;
 
-        }
-    </style>
-</head>
 
-<body class="font-sans">
-    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 p-4 container mx-auto">
-        <!-- Card 1 -->
-        <div class="relative group">
-            <div class="relative mb-10 overflow-hidden rounded-lg">
-                <img src="/static/images/Rectangle 18.png" alt="" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105">
-                <p class="absolute top-4 left-4 sm:top-6 sm:left-6 uppercase bg-blue-500 rounded-xl text-white px-4 py-1 sm:px-6 sm:py-2 text-lg sm:text-2xl font-medium text-center">
-                    12 <br> <span class="text-xs sm:text-sm">may</span>
-                </p>
-            </div>
-
-            <div class="absolute top-40 md:top-40 sm:top-52 left-4 sm:left-6 right-4 bg-white shadow-lg rounded-xl p-4 sm:p-5 cursor-pointer transition-all hover:shadow-xl">
-                <ul class="flex flex-wrap gap-3 sm:gap-4 text-sm sm:text-base">
-                    <li class="hover:text-blue-600"><i class="fa-regular fa-user text-blue-500 mr-1"></i> afnan</li>
-                    <li class="hover:text-blue-600"> <i class="fa-regular fa-comment text-blue-500 mr-1"></i> comment</li>
-                </ul>
-                <h5 class="text-lg sm:text-xl font-medium my-2 sm:my-3 hover:text-blue-600">Quantum sensing for gravity cartography</h5>
-                <button class="uppercase font-semibold text-xs sm:text-xs hover:text-blue-600">
-                    <a href="#">read more <i class="fa-solid fa-arrow-right text-blue-500 ml-1"></i></a>
-                </button>
-            </div>
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 p-4 container mx-auto my-10">
+    <!-- Card 1 -->
+    <div class="relative group">
+        <div class="relative mb-10 overflow-hidden rounded-lg">
+            <img src="/static/images/Rectangle 18.png" alt=""
+                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105">
+            <p
+                class="absolute top-4 left-4 sm:top-6 sm:left-6 uppercase bg-blue-500 rounded-xl text-white px-4 py-1 sm:px-6 sm:py-2 text-lg sm:text-2xl font-medium text-center">
+                12 <br> <span class="text-xs sm:text-sm">may</span>
+            </p>
         </div>
 
-        <!-- Card 2 (repeat for other cards, same structure) -->
-        <div class="relative group">
-            <div class="relative mb-10 overflow-hidden rounded-lg">
-                <img src="/static/images/Rectangle 18.png" alt="" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105">
-                <p class="absolute top-4 left-4 sm:top-6 sm:left-6 uppercase bg-blue-500 rounded-xl text-white px-4 py-1 sm:px-6 sm:py-2 text-lg sm:text-2xl font-medium text-center">
-                    12 <br> <span class="text-xs sm:text-sm">may</span>
-                </p>
-            </div>
-
-            <div class="absolute top-40 md:top-40 sm:top-52 left-4 sm:left-6 right-4 bg-white shadow-lg rounded-xl p-4 sm:p-5 cursor-pointer transition-all hover:shadow-xl">
-                <ul class="flex flex-wrap gap-3 sm:gap-4 text-sm sm:text-base">
-                    <li class="hover:text-blue-600"><i class="fa-regular fa-user text-blue-500 mr-1"></i> afnan</li>
-                    <li class="hover:text-blue-600"> <i class="fa-regular fa-comment text-blue-500 mr-1"></i> comment</li>
-                </ul>
-                <h5 class="text-lg sm:text-xl font-medium my-2 sm:my-3 hover:text-blue-600">Quantum sensing for gravity cartography</h5>
-                <button class="uppercase font-semibold text-xs sm:text-xs hover:text-blue-600">
-                    <a href="#">read more <i class="fa-solid fa-arrow-right text-blue-500 ml-1"></i></a>
-                </button>
-            </div>
+        <div
+            class="absolute top-40 md:top-40 sm:top-52 left-4 sm:left-6 right-4 bg-white shadow-lg rounded-xl p-4 sm:p-5 cursor-pointer transition-all hover:shadow-xl">
+            <ul class="flex flex-wrap gap-3 sm:gap-4 text-sm sm:text-base">
+                <li class="hover:text-blue-600"><i class="fa-regular fa-user text-blue-500 mr-1"></i> afnan</li>
+                <li class="hover:text-blue-600"> <i class="fa-regular fa-comment text-blue-500 mr-1"></i> comment</li>
+            </ul>
+            <h5 class="text-lg sm:text-xl font-medium my-2 sm:my-3 hover:text-blue-600">Quantum sensing for gravity
+                cartography</h5>
+            <button class="uppercase font-semibold text-xs sm:text-xs hover:text-blue-600">
+                <a href="#">read more <i class="fa-solid fa-arrow-right text-blue-500 ml-1"></i></a>
+            </button>
         </div>
-        <div class="relative group">
-            <h1> this is git</h1>
-            <div class="relative mb-10 overflow-hidden rounded-lg">
-                <img src="/static/images/Rectangle 18.png" alt="" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105">
-                <p class="absolute top-4 left-4 sm:top-6 sm:left-6 uppercase bg-blue-500 rounded-xl text-white px-4 py-1 sm:px-6 sm:py-2 text-lg sm:text-2xl font-medium text-center">
-                    12 <br> <span class="text-xs sm:text-sm">may</span>
-                </p>
-            </div>
+    </div>
 
-            <div class="absolute top-40 md:top-40 sm:top-52 left-4 sm:left-6 right-4 bg-white shadow-lg rounded-xl p-4 sm:p-5 cursor-pointer transition-all hover:shadow-xl">
-                <ul class="flex flex-wrap gap-3 sm:gap-4 text-sm sm:text-base">
-                    <li class="hover:text-blue-600"><i class="fa-regular fa-user text-blue-500 mr-1"></i> afnan</li>
-                    <li class="hover:text-blue-600"> <i class="fa-regular fa-comment text-blue-500 mr-1"></i> comment</li>
-                </ul>
-                <h5 class="text-lg sm:text-xl font-medium my-2 sm:my-3 hover:text-blue-600">Quantum sensing for gravity cartography</h5>
-                <button class="uppercase font-semibold text-xs sm:text-xs hover:text-blue-600">
-                    <a href="#">read more <i class="fa-solid fa-arrow-right text-blue-500 ml-1"></i></a>
-                </button>
-            </div>
+    <!-- Card 2 (repeat for other cards, same structure) -->
+    <div class="relative group">
+        <div class="relative mb-10 overflow-hidden rounded-lg">
+            <img src="/static/images/Rectangle 18.png" alt=""
+                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105">
+            <p
+                class="absolute top-4 left-4 sm:top-6 sm:left-6 uppercase bg-blue-500 rounded-xl text-white px-4 py-1 sm:px-6 sm:py-2 text-lg sm:text-2xl font-medium text-center">
+                12 <br> <span class="text-xs sm:text-sm">may</span>
+            </p>
         </div>
 
-        <!-- Card 3 -->
-        <div class="relative group">
-            <div class="relative mb-10 overflow-hidden rounded-lg">
-                <img src="/static/images/Rectangle 18.png" alt="" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105">
-                <p class="absolute top-4 left-4 sm:top-6 sm:left-6 uppercase bg-blue-500 rounded-xl text-white px-4 py-1 sm:px-6 sm:py-2 text-lg sm:text-2xl font-medium text-center">
-                    12 <br> <span class="text-xs sm:text-sm">may</span>
-                </p>
-            </div>
+        <div
+            class="absolute top-40 md:top-40 sm:top-52 left-4 sm:left-6 right-4 bg-white shadow-lg rounded-xl p-4 sm:p-5 cursor-pointer transition-all hover:shadow-xl">
+            <ul class="flex flex-wrap gap-3 sm:gap-4 text-sm sm:text-base">
+                <li class="hover:text-blue-600"><i class="fa-regular fa-user text-blue-500 mr-1"></i> afnan</li>
+                <li class="hover:text-blue-600"> <i class="fa-regular fa-comment text-blue-500 mr-1"></i> comment</li>
+            </ul>
+            <h5 class="text-lg sm:text-xl font-medium my-2 sm:my-3 hover:text-blue-600">Quantum sensing for gravity
+                cartography</h5>
+            <button class="uppercase font-semibold text-xs sm:text-xs hover:text-blue-600">
+                <a href="#">read more <i class="fa-solid fa-arrow-right text-blue-500 ml-1"></i></a>
+            </button>
+        </div>
+    </div>
+    <div class="relative group">
 
-            <div class="absolute top-40 md:top-40 sm:top-52 left-4 sm:left-6 right-4 bg-white shadow-lg rounded-xl p-4 sm:p-5 cursor-pointer transition-all hover:shadow-xl">
-                <ul class="flex flex-wrap gap-3 sm:gap-4 text-sm sm:text-base">
-                    <li class="hover:text-blue-600"><i class="fa-regular fa-user text-blue-500 mr-1"></i> afnan</li>
-                    <li class="hover:text-blue-600"> <i class="fa-regular fa-comment text-blue-500 mr-1"></i> comment</li>
-                </ul>
-                <h5 class="text-lg sm:text-xl font-medium my-2 sm:my-3 hover:text-blue-600">Quantum sensing for gravity cartography</h5>
-                <button class="uppercase font-semibold text-xs sm:text-xs hover:text-blue-600">
-                    <a href="#">read more <i class="fa-solid fa-arrow-right text-blue-500 ml-1"></i></a>
-                </button>
-            </div>
+        <div class="relative mb-10 overflow-hidden rounded-lg">
+            <img src="/static/images/Rectangle 18.png" alt=""
+                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105">
+            <p
+                class="absolute top-4 left-4 sm:top-6 sm:left-6 uppercase bg-blue-500 rounded-xl text-white px-4 py-1 sm:px-6 sm:py-2 text-lg sm:text-2xl font-medium text-center">
+                12 <br> <span class="text-xs sm:text-sm">may</span>
+            </p>
         </div>
 
+        <div
+            class="absolute top-40 md:top-40 sm:top-52 left-4 sm:left-6 right-4 bg-white shadow-lg rounded-xl p-4 sm:p-5 cursor-pointer transition-all hover:shadow-xl">
+            <ul class="flex flex-wrap gap-3 sm:gap-4 text-sm sm:text-base">
+                <li class="hover:text-blue-600"><i class="fa-regular fa-user text-blue-500 mr-1"></i> afnan</li>
+                <li class="hover:text-blue-600"> <i class="fa-regular fa-comment text-blue-500 mr-1"></i> comment</li>
+            </ul>
+            <h5 class="text-lg sm:text-xl font-medium my-2 sm:my-3 hover:text-blue-600">Quantum sensing for gravity
+                cartography</h5>
+            <button class="uppercase font-semibold text-xs sm:text-xs hover:text-blue-600">
+                <a href="#">read more <i class="fa-solid fa-arrow-right text-blue-500 ml-1"></i></a>
+            </button>
+        </div>
+    </div>
 
-        <!-- Card 4 -->
-        <div class="relative group">
-            <div class="relative mb-10 overflow-hidden rounded-lg">
-                <img src="/static/images/Rectangle 18.png" alt="" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105">
-                <p class="absolute top-4 left-4 sm:top-6 sm:left-6 uppercase bg-blue-500 rounded-xl text-white px-4 py-1 sm:px-6 sm:py-2 text-lg sm:text-2xl font-medium text-center">
-                    12 <br> <span class="text-xs sm:text-sm">may</span>
-                </p>
-            </div>
-
-            <div class="absolute top-40 md:top-40 sm:top-52 left-4 sm:left-6 right-4 bg-white shadow-lg rounded-xl p-4 sm:p-5 cursor-pointer transition-all hover:shadow-xl">
-                <ul class="flex flex-wrap gap-3 sm:gap-4 text-sm sm:text-base">
-                    <li class="hover:text-blue-600"><i class="fa-regular fa-user text-blue-500 mr-1"></i> afnan</li>
-                    <li class="hover:text-blue-600"> <i class="fa-regular fa-comment text-blue-500 mr-1"></i> comment</li>
-                </ul>
-                <h5 class="text-lg sm:text-xl font-medium my-2 sm:my-3 hover:text-blue-600">Quantum sensing for gravity cartography</h5>
-                <button class="uppercase font-semibold text-xs sm:text-xs hover:text-blue-600">
-                    <a href="#">read more <i class="fa-solid fa-arrow-right text-blue-500 ml-1"></i></a>
-                </button>
-            </div>
+    <!-- Card 3 -->
+    <div class="relative group">
+        <div class="relative mb-10 overflow-hidden rounded-lg">
+            <img src="/static/images/Rectangle 18.png" alt=""
+                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105">
+            <p
+                class="absolute top-4 left-4 sm:top-6 sm:left-6 uppercase bg-blue-500 rounded-xl text-white px-4 py-1 sm:px-6 sm:py-2 text-lg sm:text-2xl font-medium text-center">
+                12 <br> <span class="text-xs sm:text-sm">may</span>
+            </p>
         </div>
 
+        <div
+            class="absolute top-40 md:top-40 sm:top-52 left-4 sm:left-6 right-4 bg-white shadow-lg rounded-xl p-4 sm:p-5 cursor-pointer transition-all hover:shadow-xl">
+            <ul class="flex flex-wrap gap-3 sm:gap-4 text-sm sm:text-base">
+                <li class="hover:text-blue-600"><i class="fa-regular fa-user text-blue-500 mr-1"></i> afnan</li>
+                <li class="hover:text-blue-600"> <i class="fa-regular fa-comment text-blue-500 mr-1"></i> comment</li>
+            </ul>
+            <h5 class="text-lg sm:text-xl font-medium my-2 sm:my-3 hover:text-blue-600">Quantum sensing for gravity
+                cartography</h5>
+            <button class="uppercase font-semibold text-xs sm:text-xs hover:text-blue-600">
+                <a href="#">read more <i class="fa-solid fa-arrow-right text-blue-500 ml-1"></i></a>
+            </button>
+        </div>
+    </div>
 
-        <!-- Card 5 -->
-        <div class="relative group">
-            <div class="relative mb-10 overflow-hidden rounded-lg">
-                <img src="/static/images/Rectangle 18.png" alt="" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105">
-                <p class="absolute top-4 left-4 sm:top-6 sm:left-6 uppercase bg-blue-500 rounded-xl text-white px-4 py-1 sm:px-6 sm:py-2 text-lg sm:text-2xl font-medium text-center">
-                    12 <br> <span class="text-xs sm:text-sm">may</span>
-                </p>
-            </div>
 
-            <div class="absolute top-40 md:top-40 sm:top-52 left-4 sm:left-6 right-4 bg-white shadow-lg rounded-xl p-4 sm:p-5 cursor-pointer transition-all hover:shadow-xl">
-                <ul class="flex flex-wrap gap-3 sm:gap-4 text-sm sm:text-base">
-                    <li class="hover:text-blue-600"><i class="fa-regular fa-user text-blue-500 mr-1"></i> afnan</li>
-                    <li class="hover:text-blue-600"> <i class="fa-regular fa-comment text-blue-500 mr-1"></i> comment</li>
-                </ul>
-                <h5 class="text-lg sm:text-xl font-medium my-2 sm:my-3 hover:text-blue-600">Quantum sensing for gravity cartography</h5>
-                <button class="uppercase font-semibold text-xs sm:text-xs hover:text-blue-600">
-                    <a href="#">read more <i class="fa-solid fa-arrow-right text-blue-500 ml-1"></i></a>
-                </button>
-            </div>
+    <!-- Card 4 -->
+    <div class="relative group">
+        <div class="relative mb-10 overflow-hidden rounded-lg">
+            <img src="/static/images/Rectangle 18.png" alt=""
+                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105">
+            <p
+                class="absolute top-4 left-4 sm:top-6 sm:left-6 uppercase bg-blue-500 rounded-xl text-white px-4 py-1 sm:px-6 sm:py-2 text-lg sm:text-2xl font-medium text-center">
+                12 <br> <span class="text-xs sm:text-sm">may</span>
+            </p>
         </div>
 
-        <!-- Card 6 -->
-        <div class="relative group">
-            <div class="relative mb-10 overflow-hidden rounded-lg">
-                <img src="/static/images/Rectangle 18.png" alt="" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105">
-                <p class="absolute top-4 left-4 sm:top-6 sm:left-6 uppercase bg-blue-500 rounded-xl text-white px-4 py-1 sm:px-6 sm:py-2 text-lg sm:text-2xl font-medium text-center">
-                    12 <br> <span class="text-xs sm:text-sm">may</span>
-                </p>
-            </div>
+        <div
+            class="absolute top-40 md:top-40 sm:top-52 left-4 sm:left-6 right-4 bg-white shadow-lg rounded-xl p-4 sm:p-5 cursor-pointer transition-all hover:shadow-xl">
+            <ul class="flex flex-wrap gap-3 sm:gap-4 text-sm sm:text-base">
+                <li class="hover:text-blue-600"><i class="fa-regular fa-user text-blue-500 mr-1"></i> afnan</li>
+                <li class="hover:text-blue-600"> <i class="fa-regular fa-comment text-blue-500 mr-1"></i> comment</li>
+            </ul>
+            <h5 class="text-lg sm:text-xl font-medium my-2 sm:my-3 hover:text-blue-600">Quantum sensing for gravity
+                cartography</h5>
+            <button class="uppercase font-semibold text-xs sm:text-xs hover:text-blue-600">
+                <a href="#">read more <i class="fa-solid fa-arrow-right text-blue-500 ml-1"></i></a>
+            </button>
+        </div>
+    </div>
 
-            <div class="absolute top-40 md:top-40 sm:top-52 left-4 sm:left-6 right-4 bg-white shadow-lg rounded-xl p-4 sm:p-5 cursor-pointer transition-all hover:shadow-xl">
-                <ul class="flex flex-wrap gap-3 sm:gap-4 text-sm sm:text-base">
-                    <li class="hover:text-blue-600"><i class="fa-regular fa-user text-blue-500 mr-1"></i> afnan</li>
-                    <li class="hover:text-blue-600"> <i class="fa-regular fa-comment text-blue-500 mr-1"></i> comment</li>
-                </ul>
-                <h5 class="text-lg sm:text-xl font-medium my-2 sm:my-3 hover:text-blue-600">Quantum sensing for gravity cartography</h5>
-                <button class="uppercase font-semibold text-xs sm:text-xs hover:text-blue-600">
-                    <a href="#">read more <i class="fa-solid fa-arrow-right text-blue-500 ml-1"></i></a>
-                </button>
-            </div>
+
+    <!-- Card 5 -->
+    <div class="relative group">
+        <div class="relative mb-10 overflow-hidden rounded-lg">
+            <img src="/static/images/Rectangle 18.png" alt=""
+                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105">
+            <p
+                class="absolute top-4 left-4 sm:top-6 sm:left-6 uppercase bg-blue-500 rounded-xl text-white px-4 py-1 sm:px-6 sm:py-2 text-lg sm:text-2xl font-medium text-center">
+                12 <br> <span class="text-xs sm:text-sm">may</span>
+            </p>
         </div>
 
+        <div
+            class="absolute top-40 md:top-40 sm:top-52 left-4 sm:left-6 right-4 bg-white shadow-lg rounded-xl p-4 sm:p-5 cursor-pointer transition-all hover:shadow-xl">
+            <ul class="flex flex-wrap gap-3 sm:gap-4 text-sm sm:text-base">
+                <li class="hover:text-blue-600"><i class="fa-regular fa-user text-blue-500 mr-1"></i> afnan</li>
+                <li class="hover:text-blue-600"> <i class="fa-regular fa-comment text-blue-500 mr-1"></i> comment</li>
+            </ul>
+            <h5 class="text-lg sm:text-xl font-medium my-2 sm:my-3 hover:text-blue-600">Quantum sensing for gravity
+                cartography</h5>
+            <button class="uppercase font-semibold text-xs sm:text-xs hover:text-blue-600">
+                <a href="#">read more <i class="fa-solid fa-arrow-right text-blue-500 ml-1"></i></a>
+            </button>
+        </div>
+    </div>
 
-        <!-- Card 7 -->
-        <div class="relative group">
-            <div class="relative mb-10 overflow-hidden rounded-lg">
-                <img src="/static/images/Rectangle 18.png" alt="" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105">
-                <p class="absolute top-4 left-4 sm:top-6 sm:left-6 uppercase bg-blue-500 rounded-xl text-white px-4 py-1 sm:px-6 sm:py-2 text-lg sm:text-2xl font-medium text-center">
-                    12 <br> <span class="text-xs sm:text-sm">may</span>
-                </p>
-            </div>
-
-            <div class="absolute top-40 md:top-40 sm:top-52 left-4 sm:left-6 right-4 bg-white shadow-lg rounded-xl p-4 sm:p-5 cursor-pointer transition-all hover:shadow-xl">
-                <ul class="flex flex-wrap gap-3 sm:gap-4 text-sm sm:text-base">
-                    <li class="hover:text-blue-600"><i class="fa-regular fa-user text-blue-500 mr-1"></i> afnan</li>
-                    <li class="hover:text-blue-600"> <i class="fa-regular fa-comment text-blue-500 mr-1"></i> comment</li>
-                </ul>
-                <h5 class="text-lg sm:text-xl font-medium my-2 sm:my-3 hover:text-blue-600">Quantum sensing for gravity cartography</h5>
-                <button class="uppercase font-semibold text-xs sm:text-xs hover:text-blue-600">
-                    <a href="#">read more <i class="fa-solid fa-arrow-right text-blue-500 ml-1"></i></a>
-                </button>
-            </div>
+    <!-- Card 6 -->
+    <div class="relative group">
+        <div class="relative mb-10 overflow-hidden rounded-lg">
+            <img src="/static/images/Rectangle 18.png" alt=""
+                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105">
+            <p
+                class="absolute top-4 left-4 sm:top-6 sm:left-6 uppercase bg-blue-500 rounded-xl text-white px-4 py-1 sm:px-6 sm:py-2 text-lg sm:text-2xl font-medium text-center">
+                12 <br> <span class="text-xs sm:text-sm">may</span>
+            </p>
         </div>
 
+        <div
+            class="absolute top-40 md:top-40 sm:top-52 left-4 sm:left-6 right-4 bg-white shadow-lg rounded-xl p-4 sm:p-5 cursor-pointer transition-all hover:shadow-xl">
+            <ul class="flex flex-wrap gap-3 sm:gap-4 text-sm sm:text-base">
+                <li class="hover:text-blue-600"><i class="fa-regular fa-user text-blue-500 mr-1"></i> afnan</li>
+                <li class="hover:text-blue-600"> <i class="fa-regular fa-comment text-blue-500 mr-1"></i> comment</li>
+            </ul>
+            <h5 class="text-lg sm:text-xl font-medium my-2 sm:my-3 hover:text-blue-600">Quantum sensing for gravity
+                cartography</h5>
+            <button class="uppercase font-semibold text-xs sm:text-xs hover:text-blue-600">
+                <a href="#">read more <i class="fa-solid fa-arrow-right text-blue-500 ml-1"></i></a>
+            </button>
+        </div>
+    </div>
 
-        <!-- Card 8 -->
-        <div class="relative group">
-            <div class="relative mb-10 overflow-hidden rounded-lg">
-                <img src="/static/images/Rectangle 18.png" alt="" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105">
-                <p class="absolute top-4 left-4 sm:top-6 sm:left-6 uppercase bg-blue-500 rounded-xl text-white px-4 py-1 sm:px-6 sm:py-2 text-lg sm:text-2xl font-medium text-center">
-                    12 <br> <span class="text-xs sm:text-sm">may</span>
-                </p>
-            </div>
 
-            <div class="absolute top-40 md:top-40 sm:top-52 left-4 sm:left-6 right-4 bg-white shadow-lg rounded-xl p-4 sm:p-5 cursor-pointer transition-all hover:shadow-xl">
-                <ul class="flex flex-wrap gap-3 sm:gap-4 text-sm sm:text-base">
-                    <li class="hover:text-blue-600"><i class="fa-regular fa-user text-blue-500 mr-1"></i> afnan</li>
-                    <li class="hover:text-blue-600"> <i class="fa-regular fa-comment text-blue-500 mr-1"></i> comment</li>
-                </ul>
-                <h5 class="text-lg sm:text-xl font-medium my-2 sm:my-3 hover:text-blue-600">Quantum sensing for gravity cartography</h5>
-                <button class="uppercase font-semibold text-xs sm:text-xs hover:text-blue-600">
-                    <a href="#">read more <i class="fa-solid fa-arrow-right text-blue-500 ml-1"></i></a>
-                </button>
-            </div>
+    <!-- Card 7 -->
+    <div class="relative group">
+        <div class="relative mb-10 overflow-hidden rounded-lg">
+            <img src="/tsatic/images/Rectangle 18.png" alt=""
+                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105">
+            <p
+                class="absolute top-4 left-4 sm:top-6 sm:left-6 uppercase bg-blue-500 rounded-xl text-white px-4 py-1 sm:px-6 sm:py-2 text-lg sm:text-2xl font-medium text-center">
+                12 <br> <span class="text-xs sm:text-sm">may</span>
+            </p>
         </div>
 
-    </section>
-</body>
+        <div
+            class="absolute top-40 md:top-40 sm:top-52 left-4 sm:left-6 right-4 bg-white shadow-lg rounded-xl p-4 sm:p-5 cursor-pointer transition-all hover:shadow-xl">
+            <ul class="flex flex-wrap gap-3 sm:gap-4 text-sm sm:text-base">
+                <li class="hover:text-blue-600"><i class="fa-regular fa-user text-blue-500 mr-1"></i> afnan</li>
+                <li class="hover:text-blue-600"> <i class="fa-regular fa-comment text-blue-500 mr-1"></i> comment</li>
+            </ul>
+            <h5 class="text-lg sm:text-xl font-medium my-2 sm:my-3 hover:text-blue-600">Quantum sensing for gravity
+                cartography</h5>
+            <button class="uppercase font-semibold text-xs sm:text-xs hover:text-blue-600">
+                <a href="#">read more <i class="fa-solid fa-arrow-right text-blue-500 ml-1"></i></a>
+            </button>
+        </div>
+    </div>
 
-</html>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+
+
+</section>
+
+
+
+
+<section class="m-10">
+     <div class="bg-white w-96 shadow-sm rounded-xl overflow-hidden border card ">
+        <figure>
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Coding Project" class="w-full h-56 object-cover" />
+        </figure>
+
+        <div class="p-4 space-y-3">
+            <div class="flex justify-between">
+                <h2 class="text-lg font-semibold flex items-center gap-2">
+                    Project Dashboard
+                    <span class="px-2 py-1 text-xs font-medium bg-purple-600 text-white rounded-full">
+                        NEW
+                    </span>
+                </h2>
+                <!-- Work Progress Button -->
+                <a href="#"
+                    class="bg-white text-green-600 px-4 py-1 rounded-full font-semibold w-fit text-sm inline-flex items-center gap-2 border border-green-600 btn">
+                    <i class="fas fa-tasks"></i> 80% Work Done
+                </a>
+            </div>
+            
+            <!-- Progress Bar -->
+            <div class="progress-indicator">
+                <div class="progress-bar"></div>
+            </div>
+
+            <!-- Description -->
+            <p class="text-sm text-gray-600">
+                A responsive dashboard built with modern web technologies for project management and team collaboration.
+            </p>
+
+            <!-- Actions -->
+            <div class="flex flex-wrap gap-2">
+                <span class="px-2 py-1 text-xs border rounded-full text-gray-600 tag">HTML</span>
+                <span class="px-2 py-1 text-xs border rounded-full text-gray-600 tag">CSS</span>
+                <span class="px-2 py-1 text-xs border rounded-full text-gray-600 tag">PYTHON</span>
+                <span class="px-2 py-1 text-xs border rounded-full text-gray-600 tag">DJANGO</span>
+                <span class="px-2 py-1 text-xs border rounded-full text-gray-600 tag">JS</span>
+            </div>
+            
+            <div class="flex gap-4 mt-3">
+                <!-- GitHub Button -->
+                <a href="#"
+                    class="bg-white text-blue-600 px-4 py-1 rounded-full font-semibold w-fit text-sm inline-flex items-center gap-2 border border-blue-600 btn">
+                    <i class="fab fa-github"></i> Github
+                </a>
+
+                <!-- Demo Button -->
+                <a href="#"
+                    class="bg-white text-blue-600 px-4 py-1 rounded-full font-semibold w-fit text-sm inline-flex items-center gap-2 border border-blue-600 btn">
+                    <i class="fas fa-desktop"></i> Demo
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
 {% endblock %}
