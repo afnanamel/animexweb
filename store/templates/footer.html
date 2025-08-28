@@ -74,7 +74,38 @@
 
  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
      <script>
-        //client success
+       
+         // Initialize Framer Motion animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Fade-in animation for header
+            const fadeElements = document.querySelectorAll('[data-framer-motion-type="fade-in"]');
+            fadeElements.forEach(el => {
+                el.style.opacity = 0;
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            });
+
+            // Stagger animation for stats
+            const staggerElements = document.querySelectorAll('[data-framer-motion-type="stagger"] > *');
+            staggerElements.forEach((el, index) => {
+                el.style.opacity = 0;
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = `opacity 0.8s ease ${index * 0.2}s, transform 0.8s ease ${index * 0.2}s`;
+            });
+
+            // Trigger animations after a short delay
+            setTimeout(() => {
+                fadeElements.forEach(el => {
+                    el.style.opacity = 1;
+                    el.style.transform = 'translateY(0)';
+                });
+
+                staggerElements.forEach(el => {
+                    el.style.opacity = 1;
+                    el.style.transform = 'translateY(0)';
+                });
+            }, 300);
+        });
         document.addEventListener('DOMContentLoaded', function() {
             const sliderTrack = document.getElementById('slider-track');
             const dots = document.querySelectorAll('.slider-dot');
@@ -125,6 +156,7 @@
                 });
             }
             
+            
             // Dot navigation
             dots.forEach(dot => {
                 dot.addEventListener('click', function() {
@@ -135,7 +167,8 @@
                     stopAutoSlide();
                     startAutoSlide();
                 });
-            });
+            }); 
+            
             
             // Pause on hover
             const sliderContainer = document.querySelector('.slider-container');
@@ -146,7 +179,7 @@
             updateSlider();
             startAutoSlide();
         });
-        
+         {% comment %} expert team {% endcomment %}
          document.addEventListener('DOMContentLoaded', function() {
             const slider = document.getElementById('slider');
             const prevButton = document.getElementById('prev');
@@ -257,6 +290,45 @@
                 }
             });
         });
+        // web cart design
+           // Add subtle animations on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const card = document.querySelector('.card');
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, 100);
+            
+            // Add hover effects
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(btn => {
+                btn.addEventListener('mouseenter', () => {
+                    btn.style.transform = 'translateY(-2px)';
+                    btn.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)';
+                });
+                
+                btn.addEventListener('mouseleave', () => {
+                    btn.style.transform = 'translateY(0)';
+                    btn.style.boxShadow = 'none';
+                });
+            });
+            
+            // Add click effect
+            buttons.forEach(btn => {
+                btn.addEventListener('mousedown', () => {
+                    btn.style.transform = 'scale(0.98)';
+                });
+                
+                btn.addEventListener('mouseup', () => {
+                    btn.style.transform = 'translateY(-2px)';
+                });
+            });
+        });
+   
+        
     </script>
-    
 

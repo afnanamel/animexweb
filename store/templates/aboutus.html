@@ -1,108 +1,387 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
 
-{% extends 'base.html' %} 
-    {% load static %}
-    {% block content %}
 
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABOUT-US</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/6e35016a61.js" crossorigin="anonymous"></script>
-    <style>
-        .poppins-font {
-            font-family: "Poppins", sans-serif;
-
-        }
-    </style>
-</head>
-
-<body class="poppins-font">
 <section class="my-20">
-        <div class="flex items-center justify-center  gap-20">
+    <div class="flex items-center justify-center  gap-20">
+        <div>
+            <p class="text-lg font-semibold text-blue-600  py-5">About us</p>
+            <h1 class="text-6xl font-bold">
+                Choose <span class="text-blue-500">The Best</span> IT <br> Service Company</h1>
+            <p class="text-lg py-10">ITSoft has been optimized to give your visitors the best <br> experience in
+                terms of UX/UI, with a unique design.</p>
             <div>
-                <p class="text-lg font-semibold text-blue-600  py-5">About us</p>
-                <h1 class="text-6xl font-bold">
-                    Choose <span class="text-blue-500">The Best</span> IT <br> Service Company</h1>
-                <p class="text-lg py-10">ITSoft has been optimized to give your visitors the best <br> experience in
-                    terms of UX/UI, with a unique design.</p>
-                <div>
-                    <ul class="flex items-center gap-5 text-xl font-semibold">
-                        <li class="border-b-2 border-gray-300   cursor-pointer hover:text-blue-500 transition-all pb-4">
-                            Our Mission </li>
-                        <li class="border-b-2 border-gray-300  cursor-pointer hover:text-blue-500 transition-all pb-4">
-                            Our Vision</li>
-                        <li class="border-b-2 border-gray-300 cursor-pointer hover:text-blue-500 transition-all pb-4">
-                            Our Value</li>
-                    </ul>
-                    <p class="text-lg py-5 text-gray-500">An IT firm or MSP who keeps your IT running smoothly at all
-                        times <br> is
-                        like a plumber who fixes
-                        your pipes; that’s what they are supposed to do. <br> Many IT firms struggle to keep themselves
-                        and
-                        their IT from falling apart. We’ve <br> raised the standards in this industry and are a leading
-                        cybersecurity.</p>
-                    <button class="bg-blue-600  pl-10 rounded-tl-xl rounded-bl-xl rounded-tr-full rounded-br-full text-center text-white text-xl font-bold"><a
-                            href="https://www.youtube.com/shorts/XAgONYMGQ8w">check details about our company <i
+                <ul class="flex items-center gap-5 text-xl font-semibold">
+                    <li class="border-b-2 border-gray-300   cursor-pointer hover:text-blue-500 transition-all pb-4">
+                        Our Mission </li>
+                    <li class="border-b-2 border-gray-300  cursor-pointer hover:text-blue-500 transition-all pb-4">
+                        Our Vision</li>
+                    <li class="border-b-2 border-gray-300 cursor-pointer hover:text-blue-500 transition-all pb-4">
+                        Our Value</li>
+                </ul>
+                <p class="text-lg py-5 text-gray-500">An IT firm or MSP who keeps your IT running smoothly at all
+                    times <br> is
+                    like a plumber who fixes
+                    your pipes; that’s what they are supposed to do. <br> Many IT firms struggle to keep themselves
+                    and
+                    their IT from falling apart. We’ve <br> raised the standards in this industry and are a leading
+                    cybersecurity.</p>
+                <button
+                    class="bg-blue-600  pl-10 rounded-tl-xl rounded-bl-xl rounded-tr-full rounded-br-full text-center text-white text-xl font-bold"><a
+                        href="https://www.youtube.com/shorts/XAgONYMGQ8w">check details about our company <i
                             class="fa-solid fa-circle-play bg-white text-black rounded-full text-center p-10"></i>
-                           </a>  </button>
-                </div>
+                    </a> </button>
             </div>
-            <div class="relative p-10 rounded-full">
-               
-                    <div class="h-96 w-96">
-                        <img class=" absolute -right-3 bottom-5 rounded-lg w-full h-full " src="/static/images/man1.jpg" alt="">
-                    
-                </div>
+        </div>
+        <div class="relative p-10 rounded-full">
+
+            <div class="h-96 w-96">
+                <img class=" absolute -right-3 bottom-5 rounded-lg w-full h-full " src="/static/images/man1.jpg" alt="">
+
+            </div>
 
 
 
-                <div class=" absolute bottom-0 left-10 bg-white py-4 px-6 shadow-lg rounded-t-2xl">
-                    <div class="flex  gap-5">
-                        <div><i class="fa-solid fa-award text-6xl pt-2 "></i></div>
-                        <div>
-                            <h1 class=" text-2xl font-semibold  ">
+            <div class=" absolute bottom-0 left-10 bg-white py-4 px-6 shadow-lg rounded-t-2xl">
+                <div class="flex  gap-5">
+                    <div><i class="fa-solid fa-award text-6xl pt-2 "></i></div>
+                    <div>
+                        <h1 class=" text-2xl font-semibold  ">
 
-                                Best Awarded Company
-                            </h1>
-                            <p class="text-sm py-2">We adapt our delivery to the way your work, <br> whether as an external
-                                provider.</p>
-                        </div>
-                        
+                            Best Awarded Company
+                        </h1>
+                        <p class="text-sm py-2">We adapt our delivery to the way your work, <br> whether as an external
+                            provider.</p>
                     </div>
 
-                   
                 </div>
-                <div class="absolute -top-16 -left-10 h-40 w-40 bg-blue-500 ">
-                    <p class="text-white font-semibold text-2xl text-center pt-4"><span
-                            class="text-5xl text-white font-bold">12</span> <br> Years of Experience</p>
+
+
+            </div>
+            <div class="absolute -top-16 -left-10 h-40 w-40 bg-blue-500 ">
+                <p class="text-white font-semibold text-2xl text-center pt-4"><span
+                        class="text-5xl text-white font-bold">12</span> <br> Years of Experience</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- our story vedio -->
+<section class="py-16 ">
+    <div class=" bg-white">
+        <div class="p-8 md:p-12 container mx-auto max-w-6xl">
+            <h1 class="text-4xl md:text-5xl font-bold text-center text-gray-800 uppercase mb-6">Our Story</h1>
+
+            <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-10">
+                Founded in 2010, our journey began with a simple idea: to create products that make people's lives
+                better.
+                What started as a small team working in a garage has grown into an international company serving
+                millions of customers worldwide.
+                Our commitment to quality, innovation, and sustainability continues to drive us forward.
+            </p>
+
+            <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden max-w-4xl mx-auto">
+                <div class="relative pb-[56.25%] h-0"> <!-- 16:9 aspect ratio -->
+                    <iframe class="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/VU74s-XAn7M?si=s6DxGHCB4JtSKUIj" title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
                 </div>
             </div>
 
+            <p class="text-gray-500 text-center italic mt-4">Watch our story: From humble beginnings to industry
+                leadership</p>
         </div>
+    </div>
+</section>
+<!-- photo gallery -->
 
- </section>
+<section class="bg-purple-50 flex items-center justify-center  p-4">
+    <div class="w-2/4  ">
+        <div class="p-8 text-center">
+            <h1 class="text-4xl font-bold text-gray-800 mb-8">Our Gallery</h1>
 
 
-  <section class=" min-h-screen flex items-center justify-center p-4">
-     <div class="max-w-6xl w-full">
+            <!-- Gallery Container -->
+            <div class="relative rounded-lg overflow-hidden bg-gray-200 shadow-lg" style="height: 500px;">
+                <!-- Current Image Display -->
+                <img id="current-image" src="/static/images/aboutus.jpg" alt="Gallery image"
+                    class="w-full h-full object-cover object-center gallery-image">
+
+                <!-- Navigation Buttons -->
+                <button id="prev-btn"
+                    class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-12 h-12 flex items-center justify-center shadow-md transition-all duration-300">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="next-btn"
+                    class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-12 h-12 flex items-center justify-center shadow-md transition-all duration-300">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <!-- Image Indicators -->
+                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                    <div class="w-2 h-2 rounded-full bg-white/80 cursor-pointer indicator active"></div>
+                    <div class="w-2 h-2 rounded-full bg-white/80 cursor-pointer indicator"></div>
+                    <div class="w-2 h-2 rounded-full bg-white/80 cursor-pointer indicator"></div>
+                    <div class="w-2 h-2 rounded-full bg-white/80 cursor-pointer indicator"></div>
+                    <div class="w-2 h-2 rounded-full bg-white/80 cursor-pointer indicator"></div>
+                </div>
+            </div>
+
+            <!-- Image Information -->
+            <div class="mt-6 text-gray-700">
+                <h3 id="image-title" class="text-xl font-semibold">About Our Company</h3>
+                <p id="image-desc" class="mt-2">Our team working on innovative solutions</p>
+            </div>
+
+
+        </div>
+    </div>
+
+</section>
+<!-- grid-team -->
+<section class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+        <!-- Header Section -->
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Our Team</h1>
+            <div class="w-20 h-1 bg-blue-500 mx-auto mb-6 rounded"></div>
+
+        </header>
+
+        <!-- Team Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Team Member 1 -->
+            <div class="team-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                <div class="h-72 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                        alt="Andrew Max"
+                        class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">Andrew Max</h3>
+                    <p class="text-blue-500 font-medium mb-4">CEO / Founder</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-facebook-f text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-x-twitter text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fas fa-envelope text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                <div class="h-72 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                        alt="Sarah Johnson"
+                        class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">Sarah Johnson</h3>
+                    <p class="text-blue-500 font-medium mb-4">Marketing Director</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-facebook-f text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-x-twitter text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fas fa-envelope text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                <div class="h-72 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                        alt="Michael Chen"
+                        class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">Michael Chen</h3>
+                    <p class="text-blue-500 font-medium mb-4">Lead Developer</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-facebook-f text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-x-twitter text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fas fa-envelope text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="team-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                <div class="h-72 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                        alt="Emma Wright"
+                        class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">Emma Wright</h3>
+                    <p class="text-blue-500 font-medium mb-4">Product Designer</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-facebook-f text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-x-twitter text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fas fa-envelope text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 5 -->
+            <div class="team-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                <div class="h-72 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                        alt="David Miller"
+                        class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">David Miller</h3>
+                    <p class="text-blue-500 font-medium mb-4">Sales Manager</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-facebook-f text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-x-twitter text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fas fa-envelope text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 6 -->
+            <div class="team-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                <div class="h-72 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                        alt="Sophia Martinez"
+                        class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">Sophia Martinez</h3>
+                    <p class="text-blue-500 font-medium mb-4">UX Researcher</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-facebook-f text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-x-twitter text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fas fa-envelope text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 7 -->
+            <div class="team-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                <div class="h-72 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                        alt="James Wilson"
+                        class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">James Wilson</h3>
+                    <p class="text-blue-500 font-medium mb-4">CTO</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-facebook-f text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-x-twitter text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fas fa-envelope text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 8 -->
+            <div class="team-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+                <div class="h-72 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                        alt="Olivia Parker"
+                        class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">Olivia Parker</h3>
+                    <p class="text-blue-500 font-medium mb-4">Content Strategist</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-facebook-f text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-x-twitter text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                            <i class="fas fa-envelope text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- sliding team -->
+<section class="  flex items-center justify-center py-10">
+    <div class="max-w-6xl w-full">
         <!-- Header -->
         <div class="text-center mb-12">
             <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Our Expert Team</h1>
-            <p class="text-gray-600 max-w-2xl mx-auto">Meet the talented professionals who make our company successful with their dedication and expertise.</p>
+
         </div>
-        
+
         <!-- Team Slider -->
         <div class="relative max-w-4xl mx-auto">
             <!-- Slider container -->
@@ -111,10 +390,11 @@
                     <!-- Team Member 1 -->
                     <div class="flex-shrink-0 w-full">
                         <div class="flex flex-col md:flex-row">
-                            <div class="md:w-2/5 p-8 bg-gradient-to-br from-blue-600 to-indigo-700 flex flex-col justify-center items-center text-white">
+                            <div
+                                class="md:w-2/5 p-8 bg-gradient-to-br from-blue-600 to-indigo-700 flex flex-col justify-center items-center text-white">
                                 <div class="w-48 h-48 rounded-full bg-white p-1 shadow-2xl mb-6">
-                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" 
-                                         alt="Michael Chen" class="w-full h-full object-cover rounded-full">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                        alt="Michael Chen" class="w-full h-full object-cover rounded-full">
                                 </div>
                                 <h3 class="text-2xl font-bold">Michael Chen</h3>
                                 <p class="text-blue-200">Lead Developer</p>
@@ -133,29 +413,35 @@
                             <div class="md:w-3/5 p-8 flex flex-col justify-center">
                                 <h2 class="text-3xl font-bold text-gray-800 mb-4">About Michael</h2>
                                 <p class="text-gray-600 mb-4">
-                                    Michael is our lead developer with over 10 years of experience in software engineering. 
-                                    He specializes in creating scalable web applications and has a passion for clean code.
+                                    Michael is our lead developer with over 10 years of experience in software
+                                    engineering.
+                                    He specializes in creating scalable web applications and has a passion for clean
+                                    code.
                                 </p>
                                 <p class="text-gray-600 mb-6">
-                                    He holds a Master's degree in Computer Science from Stanford University and has contributed to numerous open-source projects.
+                                    He holds a Master's degree in Computer Science from Stanford University and has
+                                    contributed to numerous open-source projects.
                                 </p>
                                 <div class="flex flex-wrap gap-2">
-                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">JavaScript</span>
+                                    <span
+                                        class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">JavaScript</span>
                                     <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">React</span>
-                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Node.js</span>
+                                    <span
+                                        class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Node.js</span>
                                     <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">AWS</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Team Member 2 -->
                     <div class="flex-shrink-0 w-full">
                         <div class="flex flex-col md:flex-row">
-                            <div class="md:w-2/5 p-8 bg-gradient-to-br from-purple-600 to-pink-600 flex flex-col justify-center items-center text-white">
+                            <div
+                                class="md:w-2/5 p-8 bg-gradient-to-br from-purple-600 to-pink-600 flex flex-col justify-center items-center text-white">
                                 <div class="w-48 h-48 rounded-full bg-white p-1 shadow-2xl mb-6">
-                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80" 
-                                         alt="Sarah Johnson" class="w-full h-full object-cover rounded-full">
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80"
+                                        alt="Sarah Johnson" class="w-full h-full object-cover rounded-full">
                                 </div>
                                 <h3 class="text-2xl font-bold">Sarah Johnson</h3>
                                 <p class="text-purple-200">UX/UI Designer</p>
@@ -174,29 +460,36 @@
                             <div class="md:w-3/5 p-8 flex flex-col justify-center">
                                 <h2 class="text-3xl font-bold text-gray-800 mb-4">About Sarah</h2>
                                 <p class="text-gray-600 mb-4">
-                                    Sarah is our creative UX/UI designer with a background in both psychology and design. 
+                                    Sarah is our creative UX/UI designer with a background in both psychology and
+                                    design.
                                     She creates intuitive user experiences that delight our customers.
                                 </p>
                                 <p class="text-gray-600 mb-6">
-                                    Before joining our team, she worked at several top tech companies and has won multiple design awards for her innovative work.
+                                    Before joining our team, she worked at several top tech companies and has won
+                                    multiple design awards for her innovative work.
                                 </p>
                                 <div class="flex flex-wrap gap-2">
-                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">UI Design</span>
-                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">UX Research</span>
-                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Figma</span>
-                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Prototyping</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">UI
+                                        Design</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">UX
+                                        Research</span>
+                                    <span
+                                        class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Figma</span>
+                                    <span
+                                        class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Prototyping</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Team Member 3 -->
                     <div class="flex-shrink-0 w-full">
                         <div class="flex flex-col md:flex-row">
-                            <div class="md:w-2/5 p-8 bg-gradient-to-br from-green-600 to-teal-600 flex flex-col justify-center items-center text-white">
+                            <div
+                                class="md:w-2/5 p-8 bg-gradient-to-br from-green-600 to-teal-600 flex flex-col justify-center items-center text-white">
                                 <div class="w-48 h-48 rounded-full bg-white p-1 shadow-2xl mb-6">
-                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" 
-                                         alt="David Martinez" class="w-full h-full object-cover rounded-full">
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                        alt="David Martinez" class="w-full h-full object-cover rounded-full">
                                 </div>
                                 <h3 class="text-2xl font-bold">David Martinez</h3>
                                 <p class="text-green-200">Project Manager</p>
@@ -215,34 +508,42 @@
                             <div class="md:w-3/5 p-8 flex flex-col justify-center">
                                 <h2 class="text-3xl font-bold text-gray-800 mb-4">About David</h2>
                                 <p class="text-gray-600 mb-4">
-                                    David is our meticulous project manager who ensures all our projects are delivered on time and within budget. 
+                                    David is our meticulous project manager who ensures all our projects are delivered
+                                    on time and within budget.
                                     He excels at coordinating between teams and stakeholders.
                                 </p>
                                 <p class="text-gray-600 mb-6">
-                                    He is PMP certified and has managed projects for Fortune 500 companies across various industries.
+                                    He is PMP certified and has managed projects for Fortune 500 companies across
+                                    various industries.
                                 </p>
                                 <div class="flex flex-wrap gap-2">
-                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Agile</span>
-                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Scrum</span>
-                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Risk Management</span>
-                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Stakeholder Relations</span>
+                                    <span
+                                        class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Agile</span>
+                                    <span
+                                        class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Scrum</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Risk
+                                        Management</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Stakeholder
+                                        Relations</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <!-- Navigation buttons -->
             <div class="flex justify-center mt-8 space-x-4">
-                <button id="prev" class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-indigo-600 hover:bg-indigo-600 hover:text-white transition-colors">
+                <button id="prev"
+                    class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-indigo-600 hover:bg-indigo-600 hover:text-white transition-colors">
                     <i class="fas fa-arrow-left"></i>
                 </button>
-                <button id="next" class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-indigo-600 hover:bg-indigo-600 hover:text-white transition-colors">
+                <button id="next"
+                    class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-indigo-600 hover:bg-indigo-600 hover:text-white transition-colors">
                     <i class="fas fa-arrow-right"></i>
                 </button>
             </div>
-            
+
             <!-- Indicators -->
             <div class="flex justify-center mt-6 space-x-2">
                 <button class="indicator w-3 h-3 rounded-full bg-gray-300 active:bg-indigo-600" data-index="0"></button>
@@ -252,193 +553,11 @@
         </div>
     </div>
 
-  </section>
+</section>
 
-    {% comment %} our story {% endcomment %}
-    <section class="py-16 px-4">
-        <div class="container mx-auto max-w-6xl bg-white rounded-xl shadow-lg overflow-hidden">
-            <div class="p-8 md:p-12">
-                <h1 class="text-4xl md:text-5xl font-bold text-center text-gray-800 uppercase mb-6">Our Story</h1>
-                
-                <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-10">
-                    Founded in 2010, our journey began with a simple idea: to create products that make people's lives better. 
-                    What started as a small team working in a garage has grown into an international company serving millions of customers worldwide. 
-                    Our commitment to quality, innovation, and sustainability continues to drive us forward.
-                </p>
-                
-                <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden max-w-4xl mx-auto">
-                    <div class="relative pb-[56.25%] h-0"> <!-- 16:9 aspect ratio -->
-                        <iframe 
-                            class="absolute top-0 left-0 w-full h-full" 
-                            src="https://www.youtube.com/embed/VU74s-XAn7M?si=s6DxGHCB4JtSKUIj"
-                            title="YouTube video player" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-                
-                <p class="text-gray-500 text-center italic mt-4">Watch our story: From humble beginnings to industry leadership</p>
-            </div>
-        </div>
-    </section>
-    <section class="py-16 px-4">
-        <div
-            class="swiper w-full max-w-6xl mx-auto bg-gradient-to-r from-blue-800 to-blue-600 rounded-2xl shadow-xl overflow-hidden">
-            <!-- Header -->
-            <div class="px-8 pt-12 text-center">
-                <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">20k+ Satisfied Clients Worldwide</h1>
-                <p class="text-blue-100 mb-8">Hear what our clients say about us</p>
-            </div>
-
-            <!-- Slides -->
-            <div class="swiper-wrapper pb-12">
-                <!-- Slide 1 -->
-                <div class="swiper-slide px-8">
-                    <div class="flex flex-col md:flex-row justify-center items-stretch gap-6">
-                        <!-- First Testimonial -->
-                        <div
-                            class="testimonial-card bg-white bg-opacity-20 rounded-xl text-white px-8 py-10 w-full md:w-1/2 relative">
-                            <i class="fas fa-quote-left text-3xl text-blue-200 absolute -top-4 -left-4"></i>
-                            <p class=" leading-relaxed mb-4 ">"Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Atque quia corporis optio. Repellat, fugit aspernatur! The team exceeded our
-                                expectations with their professionalism."</p>
-                            <div class=" absolute -bottom-8 right-0 flex gap-10">
-
-                                <div>
-                                    <h3 class="font-bold text-white">John D. Smith</h3>
-                                    <p class="text-blue-100 text-sm">CEO, TechCorp</p>
-                                </div>
-                                <div class="bg-blue-700 p-1 rounded-xl mr-4 transform -translate-y-8">
-                                    <img class="h-20 w-20 rounded-xl object-cover border-2 border-white"
-                                        src="/static/images/man1.jpg" alt="Client portrait">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Second Testimonial -->
-                        <div
-                            class="testimonial-card bg-white bg-opacity-20 rounded-xl text-white px-8 py-10 w-full md:w-1/2 relative">
-                            <i class="fas fa-quote-left text-3xl text-blue-200 absolute -top-4 -left-4"></i>
-                            <p class=" leading-relaxed mb-4">"Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Atque quia corporis optio. Repellat, fugit aspernatur! The team exceeded our
-                                expectations with their professionalism.""</p>
-                            <div class="absolute -bottom-8 right-0 flex gap-10">
-
-                                <div>
-                                    <h3 class="font-bold text-white">Sarah Johnson</h3>
-                                    <p class="text-blue-100 text-sm">Marketing Director</p>
-                                </div>
-                                <div class="bg-blue-700 p-1 rounded-xl mr-4 transform -translate-y-8">
-                                    <img class="h-20 w-20 rounded-xl object-cover border-2 border-white"
-                                        src="/static/images/man1.jpg" alt="Client portrait">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="swiper-slide px-8">
-                    <div class="flex flex-col md:flex-row justify-center items-stretch gap-6">
-                        <!-- First Testimonial -->
-                        <div
-                            class="testimonial-card bg-white bg-opacity-20 rounded-xl text-white px-8 py-10 w-full md:w-1/2 relative">
-                            <i class="fas fa-quote-left text-3xl text-blue-200 absolute -top-4 -left-4"></i>
-                            <p class="text-lg leading-relaxed mb-4">"Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Atque quia corporis optio. Repellat, fugit aspernatur! The team exceeded our
-                                expectations with their professionalism.""r!"</p>
-                            <div class="absolute -bottom-8 right-0 flex gap-10">
-                               
-                                <div>
-                                    <h3 class="font-bold text-white">Michael Chen</h3>
-                                    <p class="text-blue-100 text-sm">CTO, InnovateSoft</p>
-                                </div>
-                                <div class="bg-blue-700 p-1 rounded-xl mr-4 transform -translate-y-8">
-                                    <img class="h-20 w-20 rounded-xl object-cover border-2 border-white"
-                                        src="/static/images/man1.jpg" alt="Client portrait">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Second Testimonial -->
-                        <div
-                            class="testimonial-card bg-white bg-opacity-20 rounded-xl text-white px-8 py-10 w-full md:w-1/2 relative">
-                            <i class="fas fa-quote-left text-3xl text-blue-200 absolute -top-4 -left-4"></i>
-                            <p class="text-lg leading-relaxed mb-4">"Their attention to detail is remarkable. We've
-                                partnered with many firms, but none have delivered the level of service and results that
-                                this team consistently provides."</p>
-                            <div class="absolute -bottom-8 right-0 flex gap-10">
-                               
-                                <div>
-                                    <h3 class="font-bold text-white">Emily Rodriguez</h3>
-                                    <p class="text-blue-100 text-sm">VP Operations,</p>
-                                </div>
-                                <div class="bg-blue-700 p-1 rounded-xl mr-4 transform -translate-y-8">
-                                    <img class="h-20 w-20 rounded-xl object-cover border-2 border-white"
-                                        src="/static/images/man1.jpg" alt="Client portrait">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="swiper-slide px-8">
-                    <div class="flex flex-col md:flex-row justify-center items-stretch gap-6">
-                        <!-- First Testimonial -->
-                        <div
-                            class="testimonial-card bg-white bg-opacity-20 rounded-xl text-white px-8 py-10 w-full md:w-1/2 relative">
-                            <i class="fas fa-quote-left text-3xl text-blue-200 absolute -top-4 -left-4"></i>
-                            <p class="text-lg leading-relaxed mb-4">"The implementation was seamless and the results
-                                were immediate. Our customer satisfaction scores have increased by 35% since we started
-                                working with them."</p>
-                            <div class="absolute -bottom-8 right-0 flex gap-10">
-                                
-                                <div>
-                                    <h3 class="font-bold text-white">David Wilson</h3>
-                                    <p class="text-blue-100 text-sm">Director, </p>
-                                </div>
-                                <div class="bg-blue-700 p-1 rounded-xl mr-4 transform -translate-y-8">
-                                    <img class="h-20 w-20 rounded-xl object-cover border-2 border-white"
-                                        src="/static/images/man1.jpg" alt="Client portrait">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Second Testimonial -->
-                        <div
-                            class="testimonial-card bg-white bg-opacity-20 rounded-xl text-white px-8 py-10 w-full md:w-1/2 relative">
-                            <i class="fas fa-quote-left text-3xl text-blue-200 absolute -top-4 -left-4"></i>
-                            <p class="text-lg leading-relaxed mb-4">"What impressed me most was their ability to
-                                understand our complex requirements and deliver a solution that was both elegant and
-                                highly functional."</p>
-                            <div class="absolute -bottom-8 right-0 flex gap-10">
-                               
-                                <div>
-                                    <h3 class="font-bold text-white">Lisa Thompson</h3>
-                                    <p class="text-blue-100 text-sm">Product Manager, </p>
-                                </div>
-                                <div class="bg-blue-700 p-1 rounded-xl mr-4 transform -translate-y-8">
-                                    <img class="h-20 w-20 rounded-xl object-cover border-2 border-white"
-                                        src="/static/images/man1.jpg" alt="Client portrait">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Navigation -->
-            <div class="swiper-pagination"></div>
-
-            <!-- Navigation arrows -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </section>
-    <section class="bg-gray-100 flex items-center justify-center p-4">
-          <div class="max-w-4xl w-full bg-gradient-to-r from-indigo-400 to-sky-500 rounded-xl shadow-lg overflow-hidden">
+<!-- team slider -->
+<section class="bg-gray-100 flex items-center justify-center p-4">
+    <div class="max-w-4xl w-full bg-gradient-to-r from-indigo-400 to-sky-500 rounded-xl shadow-lg overflow-hidden">
         <div class="p-8">
             <h2 class="text-4xl font-bold text-white mb-8 text-center">Our Achievements</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -448,112 +567,88 @@
                     <div class="text-gray-600">Team members</div>
                     <div class="mt-3 text-blue-600 text-4xl"><i class="fa-solid fa-users"></i></div>
                 </div>
-                
+
                 <!-- Winning Awards -->
                 <div class="bg-green-50 p-6 rounded-lg text-center transition-all hover:shadow-md">
                     <div class="text-3xl font-bold text-yellow-600 mb-2 counter" data-target="20">0</div>
                     <div class="text-gray-600">Winning awards</div>
                     <div class="mt-3 text-yellow-600 text-4xl"><i class="fa-solid fa-trophy"></i></div>
                 </div>
-                
+
                 <!-- Completed Projects -->
                 <div class="bg-purple-50 p-6 rounded-lg text-center transition-all hover:shadow-md">
                     <div class="text-3xl font-bold text-purple-600 mb-2 counter" data-target="50">0</div>
                     <div class="text-gray-600">Completed projects</div>
                     <div class="mt-3 text-purple-500 text-4xl"><i class="fa-solid fa-clipboard"></i></div>
                 </div>
-                
+
                 <!-- Client Reviews -->
                 <div class="bg-orange-50 p-6 rounded-lg text-center transition-all hover:shadow-md">
                     <div class="text-3xl font-bold text-orange-600 mb-2 counter" data-target="850">0</div>
                     <div class="text-gray-600">Client's reviews</div>
-                    <div class="mt-3 text-orange-500"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></div>
+                    <div class="mt-3 text-orange-500"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    </section>
-     <!-- development-section -->
- <section  class="bg-gray-50 py-5">
- <div  class="container mx-auto">
-       <h1 class="text-3xl text-center">Our design and <br>
-        <span class="font-bold">development approach</span>
-    </h1>
-    <div class="grid lg:grid-cols-2 items-center gap-10 mx-20 my-20">
-        <div class="bg-white shadow-sm py-10 pl-5 rounded-xl flex gap-4 border border-purple-50"> 
-            <div>
-                <img class="bg-black rounded-xl p-2" src="/static/images/Rocket_perspective_matte.png" alt="">
-            </div>
-          <div>
-            <h3 class="text-2xl font-bold">UX Driven Engineering</h3>
-            <p class="text-sm text-gray-500 py-5">Unlike other companies, we are a UX first development company. <br> Projects are driven by designers and they
-                make sure <br> design and experiences translate to code.</p>
-          </div>
-           
-        </div>
-        <div class="bg-white shadow-sm py-10 pl-5 rounded-xl flex gap-4  border border-purple-50"> 
-            <div>
-                <img class="bg-blue-300 rounded-xl p-2" src="/static/images/Code_perspective_matte.png" alt="">
-            </div>
-          <div>
-            <h3 class="text-2xl font-bold">UX Driven Engineering</h3>
-            <p class="text-sm text-gray-500 py-5">Unlike other companies, we are a UX first development company. <br> Projects are driven by designers and they
-                make sure <br> design and experiences translate to code.</p>
-          </div>
-           
-        </div>
-        <div class="bg-white shadow-sm py-10 pl-5 rounded-xl flex gap-4  border border-purple-50"> 
-            <div>
-                <img class="bg-pink-400 rounded-xl p-2" src="/static/images/Heart_rate_perspective_matte.png" alt="">
-            </div>
-          <div>
-            <h3 class="text-2xl font-bold">UX Driven Engineering</h3>
-            <p class="text-sm text-gray-500 py-5">Unlike other companies, we are a UX first development company. <br> Projects are driven by designers and they
-                make sure <br> design and experiences translate to code.</p>
-          </div>
-           
-        </div>
-        <div class="bg-white shadow-sm py-10 pl-5 rounded-xl flex gap-4  border border-purple-50"> 
-            <div>
-                <img class="bg-green-900 rounded-xl p-2" src="/static/images/Shield_perspective_matte.png" alt="">
-            </div>
-          <div>
-            <h3 class="text-2xl font-bold">UX Driven Engineering</h3>
-            <p class="text-sm text-gray-500 py-5">Unlike other companies, we are a UX first development company. <br> Projects are driven by designers and they
-                make sure <br> design and experiences translate to code.</p>
-          </div>
-           
-        </div>
-        <div class="bg-white shadow-sm py-10 pl-5 rounded-xl flex gap-4  border border-purple-50"> 
-            <div>
-                <img class="bg-green-600 rounded-xl p-2" src="/static/images/Success_perspective_matte.png" alt="">
-            </div>
-          <div>
-            <h3 class="text-2xl font-bold">UX Driven Engineering</h3>
-            <p class="text-sm text-gray-500 py-5">Unlike other companies, we are a UX first development company. <br> Projects are driven by designers and they
-                make sure <br> design and experiences translate to code.</p>
-          </div>
-           
-        </div>
-        <div class="bg-white shadow-sm py-10 pl-5 rounded-xl flex gap-4  border border-purple-50"> 
-            <div>
-                <img class="bg-yellow-900 rounded-xl p-2" src="/static/images/Padlock_perspective_matte.png" alt="">
-            </div>
-          <div>
-            <h3 class="text-2xl font-bold">UX Driven Engineering</h3>
-            <p class="text-sm text-gray-500 py-5">Unlike other companies, we are a UX first development company. <br> Projects are driven by designers and they
-                make sure <br> design and experiences translate to code.</p>
-          </div>
-           
-        </div>
-       
-    </div>
-   
-
- </div>
 </section>
-</body>
 
-</html>
+
+<!-- TECH STACK -->
+<section class="bg-white py-12">
+    <div class="container mx-auto">
+        <h1 class="text-center text-3xl">
+            Our <br> <span class="font-bold">Tech Stack</span>
+        </h1>
+        <div class="my-10">
+            <ul class="lg:flex justify-center items-center gap-10">
+                <li class="text-purple-800">Backend</li>
+                <li>Frontend</li>
+                <li>Databases</li>
+                <li>CMS</li>
+                <li>CloudTesting</li>
+                <li>DevOps</li>
+            </ul>
+        </div>
+
+        <div class="lg:flex justify-center items-center gap-10">
+            <div>
+                <img src="images/NodeJS.png" alt="">
+            </div>
+            <div>
+                <img src="/static/images/PHP.png" alt="">
+            </div>
+            <div>
+                <img src="/static/images/kisspng-mysqli-php-database-linux-coding-5ac4824a2e87e0 1.png" alt="">
+            </div>
+            <div>
+                <img src="/static/images/Java.png" alt="">
+            </div>
+            <div>
+                <img src="/static/images/NETCore.png" alt="">
+            </div>
+        </div>
+        <div class=" lg:flex justify-center items-center gap-10 ">
+            <div>
+                <img src="/static/images/Python.png" alt="">
+            </div>
+            <div>
+                <img src="/static/images/RubyOnRails.png" alt="">
+            </div>
+            <div>
+                <img src="/static/images/Go.png" alt="">
+            </div>
+            <div>
+                <img src="/static/images/mon 1.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
+
+
 {% endblock %}

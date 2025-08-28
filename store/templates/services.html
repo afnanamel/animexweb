@@ -1,77 +1,85 @@
       {% extends 'base.html' %} 
       {% load static %}
     {% block content %}
-   <!-- service -->
-    <section class="container mx-auto poppins-font px-4 sm:px-6">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 md:mb-12">Services</h1>
-        <div class="relative overflow-hidden w-full py-4">
-            <!-- Gradient fade effect on sides -->
-            <div class="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-white to-transparent z-10"></div>
-            <div class="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-white to-transparent z-10"></div>
-            
-            <!-- Slider Container -->
-            <div class="grid grid-cols-3 animate-slide-slow gap-6 hover:animation-pause">
-                <!-- Duplicate slides for seamless looping -->
-                <div class="flex gap-6 shrink-0">
-                    <!-- Slide 1 -->
-                    <div class="bg-white p-6 sm:p-8 md:p-10 border border-gray-100 shadow-xl rounded-xl cursor-pointer hover:bg-purple-50 transition-colors duration-300 min-w-[300px] sm:min-w-[350px]">
-                        <div class="border border-purple-500 h-10 w-10 rounded-full p-1 mb-4 flex items-center justify-center">
-                            <img src="/static/images/Code_perspective_matte.png" alt="Web Design Icon" class="h-6 w-6">
-                        </div>
-                        <h1 class="font-bold text-xl sm:text-2xl text-purple-500 mb-3">Web Design & Development</h1>
-                        <p class="text-gray-500 text-sm">A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
-                    </div>
-                    
-                    <!-- Slide 2 -->
-                    <div class="bg-white p-6 sm:p-8 md:p-10 border border-gray-100 shadow-xl rounded-xl cursor-pointer hover:bg-purple-50 transition-colors duration-300 min-w-[300px] sm:min-w-[350px]">
-                        <div class="border border-purple-500 h-10 w-10 rounded-full p-1 mb-4 flex items-center justify-center">
-                            <img src="/static/images/Code_perspective_matte.png" alt="Web Design Icon" class="h-6 w-6">
-                        </div>
-                        <h1 class="font-bold text-xl sm:text-2xl text-purple-500 mb-3">Web Design & Development</h1>
-                        <p class="text-gray-500 text-sm">A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
-                    </div>
-                    
-                    <!-- Slide 3 -->
-                    <div class="bg-white p-6 sm:p-8 md:p-10 border border-gray-100 shadow-xl rounded-xl cursor-pointer hover:bg-purple-50 transition-colors duration-300 min-w-[300px] sm:min-w-[350px]">
-                        <div class="border border-purple-500 h-10 w-10 rounded-full p-1 mb-4 flex items-center justify-center">
-                            <img src="/static/images/Code_perspective_matte.png" alt="Web Design Icon" class="h-6 w-6">
-                        </div>
-                        <h1 class="font-bold text-xl sm:text-2xl text-purple-500 mb-3">Web Design & Development</h1>
-                        <p class="text-gray-500 text-sm">A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
-                    </div>
-                    
-                    <!-- Slide 4 -->
-                    <div class="bg-white p-6 sm:p-8 md:p-10 border border-gray-100 shadow-xl rounded-xl cursor-pointer hover:bg-purple-50 transition-colors duration-300 min-w-[300px] sm:min-w-[350px]">
-                        <div class="border border-purple-500 h-10 w-10 rounded-full p-1 mb-4 flex items-center justify-center">
-                            <img src="/static/images/Code_perspective_matte.png" alt="Web Design Icon" class="h-6 w-6">
-                        </div>
-                        <h1 class="font-bold text-xl sm:text-2xl text-purple-500 mb-3">Web Design & Development</h1>
-                        <p class="text-gray-500 text-sm">A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
-                    </div>
-                    
-                    <!-- Slide 5 -->
-                    <div class="bg-white p-6 sm:p-8 md:p-10 border border-gray-100 shadow-xl rounded-xl cursor-pointer hover:bg-purple-50 transition-colors duration-300 min-w-[300px] sm:min-w-[350px]">
-                        <div class="border border-purple-500 h-10 w-10 rounded-full p-1 mb-4 flex items-center justify-center">
-                            <img src="/static/images/Code_perspective_matte.png" alt="Web Design Icon" class="h-6 w-6">
-                        </div>
-                        <h1 class="font-bold text-xl sm:text-2xl text-purple-500 mb-3">Web Design & Development</h1>
-                        <p class="text-gray-500 text-sm">A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
-                    </div>
-                    
-                    <!-- Slide 6 -->
-                    <div class="bg-white p-6 sm:p-8 md:p-10 border border-gray-100 shadow-xl rounded-xl cursor-pointer hover:bg-purple-50 transition-colors duration-300 min-w-[300px] sm:min-w-[350px]">
-                        <div class="border border-purple-500 h-10 w-10 rounded-full p-1 mb-4 flex items-center justify-center">
-                            <img src="/static/images/Code_perspective_matte.png" alt="Web Design Icon" class="h-6 w-6">
-                        </div>
-                        <h1 class="font-bold text-xl sm:text-2xl text-purple-500 mb-3">Web Design & Development</h1>
-                        <p class="text-gray-500 text-sm">A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
-                    </div>
+
+<!-- information-section -->
+<section class="py-8 container mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
+        <!-- Card 1 -->
+        <div class="relative group overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div class="h-80 sm:h-96 w-full overflow-hidden">
+                <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    src="/static/images/Rectangle 17.png" alt="Information Management System">
+            </div>
+            <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div
+                class="absolute -bottom-6 -left-5 right-0 p-5 transition-all duration-300 transform translate-y-0 group-hover:translate-y-[-10px]">
+                <div class="bg-white p-5  shadow-lg">
+                    <h2 class="card-title text-xl md:text-2xl border-l-4 border-blue-700 pl-3 mb-2">Information
+                        Management
+                        System</h2>
+                    <p class="max-h-0 overflow-hidden group-hover:max-h-40 transition-all duration-500 ease-in-out">
+                        <span class="text-blue-800 block pt-2">
+                            Accelerate innovation with world-class tech teams. We'll match you to an entire remote team.
+                        </span>
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
 
-    </section>
+        <!-- Card 2 -->
+        <div class="relative group overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div class="h-80 sm:h-96 w-full overflow-hidden">
+                <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    src="/static/images/Rectangle 17.png" alt="Information Management System">
+            </div>
+            <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div
+                class="absolute -bottom-6 -left-5 right-0 p-5 transition-all duration-300 transform translate-y-0 group-hover:translate-y-[-10px]">
+                <div class="bg-white p-5  shadow-lg">
+                    <h2 class="card-title text-xl md:text-2xl border-l-4 border-blue-700 pl-3 mb-2">Information
+                        Management
+                        System</h2>
+                    <p class="max-h-0 overflow-hidden group-hover:max-h-40 transition-all duration-500 ease-in-out">
+                        <span class="text-blue-800 block pt-2">
+                            Accelerate innovation with world-class tech teams. We'll match you to an entire remote team.
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="relative group overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div class="h-80 sm:h-96 w-full overflow-hidden">
+                <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    src="/static/images/Rectangle 17.png" alt="Information Management System">
+            </div>
+            <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div
+                class="absolute -bottom-6 -left-5 right-0 p-5 transition-all duration-300 transform translate-y-0 group-hover:translate-y-[-10px]">
+                <div class="bg-white p-5  shadow-lg">
+                    <h2 class="card-title text-xl md:text-2xl border-l-4 border-blue-700 pl-3 mb-2">Information
+                        Management
+                        System</h2>
+                    <p class="max-h-0 overflow-hidden group-hover:max-h-40 transition-all duration-500 ease-in-out">
+                        <span class="text-blue-800 block pt-2">
+                            Accelerate innovation with world-class tech teams. We'll match you to an entire remote team.
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 <!-- why chhose us -->
 <section class=" my-10 container mx-auto">
     <p class="text-blue-600 text-center uppercase text-sm">REASON TO CHOOSE US</p>
@@ -176,4 +184,98 @@
 
     </div>
 </section>
+
+<!-- development-section -->
+<section class="bg-gray-50 py-5">
+    <div class="container mx-auto">
+        <h1 class="text-3xl text-center">Our design and <br>
+            <span class="font-bold">development approach</span>
+        </h1>
+        <div class="grid lg:grid-cols-2 items-center gap-10 mx-20 my-20">
+            <div class="bg-white shadow-sm py-10 pl-5 rounded-xl flex gap-4 border border-purple-50">
+                <div>
+                    <img class="bg-black rounded-xl p-2" src="/static/images/Rocket_perspective_matte.png" alt="">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold">UX Driven Engineering</h3>
+                    <p class="text-sm text-gray-500 py-5">Unlike other companies, we are a UX first development company.
+                        <br> Projects are driven by designers and they
+                        make sure <br> design and experiences translate to code.
+                    </p>
+                </div>
+
+            </div>
+            <div class="bg-white shadow-sm py-10 pl-5 rounded-xl flex gap-4  border border-purple-50">
+                <div>
+                    <img class="bg-blue-300 rounded-xl p-2" src="/static/images/Code_perspective_matte.png" alt="">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold">UX Driven Engineering</h3>
+                    <p class="text-sm text-gray-500 py-5">Unlike other companies, we are a UX first development company.
+                        <br> Projects are driven by designers and they
+                        make sure <br> design and experiences translate to code.
+                    </p>
+                </div>
+
+            </div>
+            <div class="bg-white shadow-sm py-10 pl-5 rounded-xl flex gap-4  border border-purple-50">
+                <div>
+                    <img class="bg-pink-400 rounded-xl p-2" src="/static/images/Heart_rate_perspective_matte.png"
+                        alt="">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold">UX Driven Engineering</h3>
+                    <p class="text-sm text-gray-500 py-5">Unlike other companies, we are a UX first development company.
+                        <br> Projects are driven by designers and they
+                        make sure <br> design and experiences translate to code.
+                    </p>
+                </div>
+
+            </div>
+            <div class="bg-white shadow-sm py-10 pl-5 rounded-xl flex gap-4  border border-purple-50">
+                <div>
+                    <img class="bg-green-900 rounded-xl p-2" src="/static/images/Shield_perspective_matte.png" alt="">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold">UX Driven Engineering</h3>
+                    <p class="text-sm text-gray-500 py-5">Unlike other companies, we are a UX first development company.
+                        <br> Projects are driven by designers and they
+                        make sure <br> design and experiences translate to code.
+                    </p>
+                </div>
+
+            </div>
+            <div class="bg-white shadow-sm py-10 pl-5 rounded-xl flex gap-4  border border-purple-50">
+                <div>
+                    <img class="bg-green-600 rounded-xl p-2" src="/static/images/Success_perspective_matte.png" alt="">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold">UX Driven Engineering</h3>
+                    <p class="text-sm text-gray-500 py-5">Unlike other companies, we are a UX first development company.
+                        <br> Projects are driven by designers and they
+                        make sure <br> design and experiences translate to code.
+                    </p>
+                </div>
+
+            </div>
+            <div class="bg-white shadow-sm py-10 pl-5 rounded-xl flex gap-4  border border-purple-50">
+                <div>
+                    <img class="bg-yellow-900 rounded-xl p-2" src="/static/images/Padlock_perspective_matte.png" alt="">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold">UX Driven Engineering</h3>
+                    <p class="text-sm text-gray-500 py-5">Unlike other companies, we are a UX first development company.
+                        <br> Projects are driven by designers and they
+                        make sure <br> design and experiences translate to code.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+
     {% endblock %}

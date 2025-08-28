@@ -1,8 +1,202 @@
- {% include "navbar.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
 
- {% block content %}
- 
- {% endblock %} 
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI (after Tailwind) -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Your Custom CSS (load last to override defaults if needed) -->
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 
-{% include "footer.html" %} 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6e35016a61.js" crossorigin="anonymous"></script>
+      <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+                    },
+                    keyframes: {
+                        'infinite-scroll': {
+                            from: { transform: 'translateX(0)' },
+                            to: { transform: 'translateX(-100%)' },
+                        }
+                    },
+                    colors: {
+                        indigo: {
+                            800: '#3730a3',
+                            900: '#312e81',
+                        },
+                        blue: {
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins">
+
+    {% include "navbar.html" %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% include "footer.html" %}
+
+    <!-- JS Libraries -->
+    <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Your custom JS -->
+    <script src="{% static 'css/style.css' %}"></script>
+      <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Image data
+        const images = [
+            {
+                src: '/static/images/aboutus.jpg',
+                title: 'About Our Company',
+                description: 'Our team working on innovative solutions'
+            },
+            {
+                src: '/static/images/aboutus2.jpg',
+                title: 'Our IT Department',
+                description: 'State-of-the-art technology infrastructure'
+            },
+            {
+                src: '/static/images/Case-study__image (1).png',
+                title: 'Case Study #1',
+                description: 'Successful implementation for client XYZ'
+            },
+            {
+                src: '/static/images/Case-study__image (2).png',
+                title: 'Case Study #2',
+                description: 'Digital transformation project'
+            },
+            {
+                src: '/static/images/Case-study__image.png',
+                title: 'Case Study #3',
+                description: 'Cloud migration success story'
+            }
+        ];
+        
+        let currentIndex = 0;
+        const currentImage = document.getElementById('current-image');
+        const imageTitle = document.getElementById('image-title');
+        const imageDesc = document.getElementById('image-desc');
+        const indicators = document.querySelectorAll('.indicator');
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const nextBtn = document.getElementById('next-btn');
+        const prevBtn = document.getElementById('prev-btn');
+        
+        // Function to update the gallery
+        function updateGallery() {
+            // Fade out animation
+            currentImage.style.opacity = 0;
+            
+            setTimeout(() => {
+                currentImage.src = images[currentIndex].src;
+                imageTitle.textContent = images[currentIndex].title;
+                imageDesc.textContent = images[currentIndex].description;
+                
+                // Fade in animation
+                currentImage.style.transition = 'opacity 0.5s ease';
+                currentImage.style.opacity = 1;
+                
+                // Update indicators
+                indicators.forEach((indicator, index) => {
+                    if (index === currentIndex) {
+                        indicator.classList.add('active', 'bg-blue-500');
+                        indicator.classList.remove('bg-white/80');
+                    } else {
+                        indicator.classList.remove('active', 'bg-blue-500');
+                        indicator.classList.add('bg-white/80');
+                    }
+                });
+                
+                // Update thumbnails
+                thumbnails.forEach((thumbnail, index) => {
+                    if (index === currentIndex) {
+                        thumbnail.classList.add('active', 'border-blue-500');
+                        thumbnail.classList.remove('border-transparent');
+                    } else {
+                        thumbnail.classList.remove('active', 'border-blue-500');
+                        thumbnail.classList.add('border-transparent');
+                    }
+                });
+            }, 200);
+        }
+        
+        // Next button event listener
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateGallery();
+        });
+        
+        // Previous button event listener
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateGallery();
+        });
+        
+        // Indicator click event listeners
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                currentIndex = index;
+                updateGallery();
+            });
+        });
+        
+        // Thumbnail click event listeners
+        thumbnails.forEach((thumbnail, index) => {
+            thumbnail.addEventListener('click', () => {
+                currentIndex = index;
+                updateGallery();
+            });
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') {
+                currentIndex = (currentIndex + 1) % images.length;
+                updateGallery();
+            } else if (e.key === 'ArrowLeft') {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                updateGallery();
+            }
+        });
+        
+        // Auto slider
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateGallery();
+        }, 4000); // Change slide every 4 seconds
+        
+        // Initialize gallery
+        updateGallery();
+    });
+    
+</script>
+</body>
+</html>
