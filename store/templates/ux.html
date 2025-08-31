@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="py-16 px-6 bg-white font-sans container mx-auto">
+  
+  <!-- What is UI/UX Section -->
+  <div class="flex flex-col lg:flex-row justify-between items-center mb-16">
+    <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-4">What is UI/UX?</h3>
+      <p class="text-gray-600 mb-4 leading-relaxed">
+        UI (User Interface) and UX (User Experience) are two distinct but interconnected disciplines crucial to designing digital products.
+        UI design focuses on the visual and interactive elements of a product, such as its layout, colors, and buttons, while UX design is the broader 
+        process of planning the entire user's interaction, ensuring the product is easy, logical, and enjoyable to use.
+      </p>
+      <p class="text-gray-600 leading-relaxed">
+        In essence, UI is the "how it looks," and UX is the "how it feels and functions." Together they create products that are not only visually appealing but also intuitive and user-friendly.
+      </p>
+    </div>
+    <div class="lg:w-1/2 flex justify-center">
+      <img src="{% static 'images/ux3.jpg' %}" alt="UI/UX Design Illustration" class="rounded-lg shadow-md w-full max-w-md">
+    </div>
+  </div>
+
+  <!-- Process & Methodology Section -->
+  <div class="flex flex-col-reverse lg:flex-row items-center mb-16">
+    <div class="lg:w-1/2 flex justify-center mt-8 lg:mt-0">
+      <img src="{% static 'images/ux image.jpg' %}" alt="Design Process" class="rounded-lg shadow-md w-full max-w-md">
+    </div>
+    <div class="lg:w-1/2 lg:pl-12">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Process & Methodology</h3>
+      <p class="text-gray-600 mb-4 leading-relaxed">
+        We follow a user-centered design approach that prioritizes the needs and goals of your audience. Our process begins with comprehensive research and continues through iterative design, testing, and refinement.
+      </p>
+      <p class="text-gray-600 mb-4 leading-relaxed">
+        Our <span class="text-blue-600 font-medium">delivery model</span> ensures we maintain quality while adapting to your timeline and budget constraints, resulting in products that exceed user expectations.
+      </p>
+      <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-600 my-6">
+        <p class="italic text-blue-600 mb-1">
+          "Simform is quick to identify larger problems with the software, so we decided to expand our scope to build new modules."
+        </p>
+        <div class="flex items-center gap-4 mt-4">
+          <img src="{% static 'images/Ellipse 185.png' %}" alt="Jeewa Markram" class="w-12 h-12 rounded-full">
+          <div>
+            <h6 class="font-semibold text-gray-800">Jeewa Markram</h6>
+            <p class="text-sm text-gray-500">CEO at TechCorp</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Benefits Section -->
+  <div class="flex flex-col lg:flex-row items-center mb-16">
+    <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-4">Benefits of Our Approach</h3>
+      <p class="text-gray-600 mb-4 leading-relaxed">
+        Our UI/UX design services deliver tangible business results through improved user satisfaction, increased conversion rates, and reduced development costs.
+      </p>
+      <ul class="text-gray-600 mb-4 list-disc pl-5 space-y-2">
+        <li>Increased user engagement and retention</li>
+        <li>Higher conversion rates and ROI</li>
+        <li>Reduced development time and costs</li>
+        <li>Competitive advantage in your market</li>
+      </ul>
+      <p class="text-gray-600 mb-4 leading-relaxed">
+        We create <span class="text-blue-600 font-medium">pixel-perfect designs</span> that are both beautiful and functional, ensuring your product stands out in today's competitive digital landscape.
+      </p>
+      <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-600 my-6">
+        <p class="italic text-blue-600 mb-1">
+          "The redesign resulted in a 40% increase in user engagement and 25% higher conversion rates within the first month."
+        </p>
+        <div class="flex items-center gap-4 mt-4">
+          <img src="{% static 'images/Ellipse 185.png' %}" alt="Sarah Johnson" class="w-12 h-12 rounded-full">
+          <div>
+            <h6 class="font-semibold text-gray-800">Sarah Johnson</h6>
+            <p class="text-sm text-gray-500">Product Manager at InnovateCo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:w-1/2 flex justify-center">
+      <img src="{% static 'images/ex2.jpg' %}" alt="Design Benefits" class="rounded-lg shadow-md w-full max-w-md">
+    </div>
+  </div>
+</section>
+{% endblock %}

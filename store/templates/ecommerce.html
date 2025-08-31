@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="py-16 px-6 bg-white font-sans container mx-auto">
+  <h2 class="text-4xl font-bold text-gray-800 text-center mb-12">
+    Way of building <br>
+    <span class="text-blue-600">Successful E-commerce</span>
+  </h2>
+
+  <!-- What is E-commerce Section -->
+  <div class="flex flex-col lg:flex-row justify-between items-center mb-16">
+    <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
+      <div class="flex items-center mb-4">
+        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+          <i class="fa-solid fa-cart-shopping text-blue-600"></i>
+        </div>
+        <h3 class="text-2xl font-semibold text-gray-800">What is E-commerce?</h3>
+      </div>
+      <p class="text-gray-600 mb-4 leading-relaxed">
+        E-commerce (electronic commerce) is the buying and selling of goods and services, or the transmitting of funds or data, over an electronic network, primarily the internet. These business transactions occur either as business-to-business, business-to-consumer, consumer-to-consumer or consumer-to-business.
+      </p>
+      <p class="text-gray-600 leading-relaxed">
+        Modern e-commerce solutions include mobile shopping, secure payment processing, inventory management, and personalized marketing to create seamless shopping experiences that drive conversions and customer loyalty.
+      </p>
+    </div>
+    <div class="lg:w-1/2 flex justify-center">
+      <div class="relative">
+        <img src="{% static 'images/e-commerce.jpg' %}" alt="E-commerce Platform" class="rounded-lg shadow-md w-full max-w-md">
+        <div class="absolute -bottom-4 -right-4 bg-blue-600 text-white py-2 px-4 rounded-lg shadow-lg">
+          <span class="text-sm font-medium">Sales +42%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Process & Methodology Section -->
+  <div class="flex flex-col-reverse lg:flex-row items-center mb-16">
+    <div class="lg:w-1/2 flex justify-center mt-8 lg:mt-0">
+      <div class="relative">
+        <img src="{% static 'images/ecommerce2.jpg' %}" alt="E-commerce Process" class="rounded-lg shadow-md w-full max-w-md">
+        <div class="absolute -top-4 -left-4 bg-white p-2 rounded-lg shadow-md border border-gray-100">
+          <div class="flex items-center">
+            <div class="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+            <span class="text-xs font-medium">24/7 Support</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:w-1/2 lg:pl-12">
+      <div class="flex items-center mb-4">
+        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+        <i class="fa-solid fa-clipboard-check text-blue-600"></i>
+        </div>
+        <h3 class="text-2xl font-semibold text-gray-800">Our E-commerce Process</h3>
+      </div>
+      <p class="text-gray-600 mb-4 leading-relaxed">
+        We follow a comprehensive e-commerce development approach that begins with understanding your business goals and target audience, then moves through platform selection, design, development, and ongoing optimization.
+      </p>
+      <div class="grid grid-cols-2 gap-4 my-6">
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+          <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mb-2">
+            <span class="text-blue-600 font-bold">1</span>
+          </div>
+          <h4 class="font-medium text-gray-800 mb-1">Strategy</h4>
+          <p class="text-xs text-gray-600">Business analysis & planning</p>
+        </div>
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+          <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mb-2">
+            <span class="text-blue-600 font-bold">2</span>
+          </div>
+          <h4 class="font-medium text-gray-800 mb-1">Design</h4>
+          <p class="text-xs text-gray-600">UI/UX & customer journey</p>
+        </div>
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+          <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mb-2">
+            <span class="text-blue-600 font-bold">3</span>
+          </div>
+          <h4 class="font-medium text-gray-800 mb-1">Development</h4>
+          <p class="text-xs text-gray-600">Platform implementation</p>
+        </div>
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+          <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mb-2">
+            <span class="text-blue-600 font-bold">4</span>
+          </div>
+          <h4 class="font-medium text-gray-800 mb-1">Growth</h4>
+          <p class="text-xs text-gray-600">Marketing & optimization</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Benefits Section -->
+  <div class="flex flex-col lg:flex-row items-center mb-16">
+    <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
+      <div class="flex items-center mb-4">
+        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+        <i class="fa-solid fa-list-check text-blue-600"></i>
+        </div>
+        <h3 class="text-2xl font-semibold text-gray-800">E-commerce Benefits</h3>
+      </div>
+      <p class="text-gray-600 mb-4 leading-relaxed">
+        Our e-commerce solutions deliver measurable business results through improved customer experience, increased conversion rates, and operational efficiency.
+      </p>
+      <div class="space-y-4 mb-6">
+        <div class="flex items-start">
+          <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 flex items-center justify-center mt-1 mr-3">
+          <i class="fa-solid fa-check text-green-600"></i> 
+          </div>
+          <p class="text-gray-600">Global reach and 24/7 availability</p>
+        </div>
+        <div class="flex items-start">
+          <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 flex items-center justify-center mt-1 mr-3">
+             <i class="fa-solid fa-check text-green-600"></i> 
+          </div>
+          <p class="text-gray-600">Reduced operational costs</p>
+        </div>
+        <div class="flex items-start">
+          <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 flex items-center justify-center mt-1 mr-3">
+             <i class="fa-solid fa-check text-green-600"></i> 
+          </div>
+          <p class="text-gray-600">Personalized shopping experiences</p>
+        </div>
+        <div class="flex items-start">
+          <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 flex items-center justify-center mt-1 mr-3">
+            <i class="fa-solid fa-check text-green-600"></i> 
+          </div>
+          <p class="text-gray-600">Data-driven decision making</p>
+        </div>
+      </div>
+    </div>
+    <div class="lg:w-1/2 flex justify-center">
+      <div class="bg-blue-50 p-8 rounded-xl border border-blue-100 w-full max-w-md">
+        <h4 class="font-bold text-gray-800 text-lg mb-4">Performance Metrics</h4>
+        <div class="space-y-6">
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-sm font-medium text-gray-700">Conversion Rate</span>
+              <span class="text-sm font-medium text-blue-600">+35%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5">
+              <div class="bg-blue-600 h-2.5 rounded-full" style="width: 65%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-sm font-medium text-gray-700">Average Order Value</span>
+              <span class="text-sm font-medium text-blue-600">+28%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5">
+              <div class="bg-blue-600 h-2.5 rounded-full" style="width: 55%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-sm font-medium text-gray-700">Customer Retention</span>
+              <span class="text-sm font-medium text-blue-600">+42%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5">
+              <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-sm font-medium text-gray-700">Mobile Revenue</span>
+              <span class="text-sm font-medium text-blue-600">+58%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5">
+              <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

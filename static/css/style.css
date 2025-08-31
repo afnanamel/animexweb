@@ -23,10 +23,10 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    background: var(--light-bg);
+    
     min-height: 100vh;
     line-height: 1.6;
-    color: var(--text-dark);
+    
 }
 
 /* Poppins font class */
@@ -139,32 +139,8 @@ body {
     box-shadow: var(--shadow-lg);
 }
 
-.progress-indicator {
-    position: relative;
-    overflow: hidden;
-    height: 6px;
-    background-color: #e5e7eb;
-    border-radius: 3px;
-    margin-top: 8px;
-}
 
-.progress-bar {
-    height: 100%;
-    border-radius: 3px;
-    background-color: var(--secondary-color);
-    width: 80%;
-    animation: progressAnimation 1.5s ease-in-out;
-}
 
-@keyframes progressAnimation {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 80%;
-    }
-}
 
 .tag {
     transition: all 0.2s ease;
@@ -201,149 +177,11 @@ body {
 
 
 
-/* Utility classes */
-.text-lg {
-    font-size: 1.125rem;
-}
 
-.text-sm {
-    font-size: 0.875rem;
-}
 
-.text-xs {
-    font-size: 0.75rem;
-}
 
-.font-semibold {
-    font-weight: 600;
-}
 
-.font-medium {
-    font-weight: 500;
-}
 
-.rounded-xl {
-    border-radius: 0.75rem;
-}
-
-.rounded-full {
-    border-radius: 9999px;
-}
-
-.border {
-    border-width: 1px;
-}
-
-.w-fit {
-    width: fit-content;
-}
-
-.flex {
-    display: flex;
-}
-
-.justify-between {
-    justify-content: space-between;
-}
-
-.justify-end {
-    justify-content: flex-end;
-}
-
-.items-center {
-    align-items: center;
-}
-
-.gap-2 {
-    gap: 0.5rem;
-}
-
-.gap-3 {
-    gap: 0.75rem;
-}
-
-.gap-4 {
-    gap: 1rem;
-}
-
-.gap-6 {
-    gap: 1.5rem;
-}
-
-.space-y-3>*+* {
-    margin-top: 0.75rem;
-}
-
-.mt-3 {
-    margin-top: 0.75rem;
-}
-
-.mt-4 {
-    margin-top: 1rem;
-}
-
-.p-4 {
-    padding: 1rem;
-}
-
-.px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.py-1 {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-}
-
-.px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
-
-.w-full {
-    width: 100%;
-}
-
-.h-56 {
-    height: 14rem;
-}
-
-.object-cover {
-    object-fit: cover;
-}
-
-.bg-white {
-    background-color: white;
-}
-
-.bg-purple-600 {
-    background-color: #8b5cf6;
-}
-
-.text-white {
-    color: white;
-}
-
-.text-gray-600 {
-    color: #4b5563;
-}
-
-.text-blue-600 {
-    color: #2563eb;
-}
-
-.text-green-600 {
-    color: #059669;
-}
-
-.border-blue-600 {
-    border-color: #2563eb;
-}
-
-.border-green-600 {
-    border-color: #059669;
-}
 
 .hover\:bg-blue-600:hover {
     background-color: #2563eb;

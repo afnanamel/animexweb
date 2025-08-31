@@ -18,4 +18,10 @@ def portfolio(request):
      return render(request, "portfolio.html")
 def casestudies(request):
      return render(request, "casestudies.html")
+def ux(request):
+     return render(request, "ux.html")
+def consultance(request):
+     return render(request, "consultance.html")
+def ecommerce(request):
+     return render(request, "ecommerce.html")
 
