@@ -126,7 +126,7 @@ body {
     transform: translateY(100%);
 }
 
-/* Web card design */
+/* card design card design */
 .card {
     transition: all 0.3s ease;
     background: white;
@@ -139,7 +139,14 @@ body {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
 }
-
+@keyframes loadProgress {
+    from { width: 0%; }
+    to { width: var(--progress-width); }
+}
+.progress-bar {
+    width: 0%;
+    animation: loadProgress 2s ease-in-out forwards;
+}
 
 
 

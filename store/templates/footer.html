@@ -73,6 +73,7 @@
 
 
  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
      <script>
        
          // Initialize Framer Motion animations
@@ -290,11 +291,7 @@
                 }
             });
         });
-<<<<<<< HEAD
 
-        
-    </script>
-=======
         // web cart design
            // Add subtle animations on page load
         document.addEventListener('DOMContentLoaded', function() {
@@ -333,7 +330,30 @@
                 });
             });
         });
+{% comment %} case studies cart {% endcomment %}
+document.addEventListener("DOMContentLoaded", () => {
+    // Animate numbers
+    document.querySelectorAll(".progress-text").forEach(el => {
+        const span = el.querySelector("span");
+        const target = parseInt(el.getAttribute("data-progress"));
+        let count = 0;
+        const step = () => {
+            count++;
+            span.textContent = count + "%";
+            if (count < target) {
+                requestAnimationFrame(step);
+            }
+        };
+        requestAnimationFrame(step);
+    });
+
+    // Animate progress bars
+    document.querySelectorAll(".progress-bar").forEach(bar => {
+        const target = bar.getAttribute("data-progress") + "%";
+        bar.style.setProperty("--progress-width", target);
+    });
+});
     </script>
     
->>>>>>> 446dd79bef1f6434de75e60163cfaee9a844ea10
+
 
