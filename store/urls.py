@@ -1,3 +1,6 @@
+
+
+
 from django.urls import path
 from . import views
 
@@ -12,6 +15,10 @@ urlpatterns = [
     path('consultance/', views.consultance, name='consultance'),
     path('ux/', views.ux, name='ux'),
     path('ecommerce/', views.ecommerce, name='ecommerce'),
+    path('atpohor/', views.atpohor, name='atpohor'),
+    path('baby/', views.baby, name='baby'),
+
+
     
 ]
 

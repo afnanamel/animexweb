@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div
+    class="relative flex flex-col md:flex-row justify-center items-center gap-16 mb-20 min-h-[80vh] px-6 bg-gradient-to-r
+     from-pink-50 via-white to-pink-50 overflow-hidden ">
+
+    <!-- Decorative Background Shapes -->
+    <div class="absolute -top-20 -left-20 w-72 h-72 bg-pink-200 rounded-full opacity-40"></div>
+    <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-pink-300 rounded-full opacity-30"></div>
+
+    <!-- Left Content -->
+    <div class="max-w-xl text-center md:text-left relative z-10">
+        <h1 class="font-extrabold text-5xl md:text-6xl text-pink-700 mb-4">
+            Baby Shoppers
+        </h1>
+        <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6">
+            Bangladesh’s Trendy Multi-Vendor Marketplace
+        </h2>
+        <p class="text-gray-600 mb-8 leading-relaxed">
+            <span class="font-semibold text-gray-800">PinkShop.com</span> is a Bangladeshi multi-vendor e-commerce platform offering 
+            a curated collection of fashion, lifestyle, and daily essentials. Built on <span class="font-semibold text-gray-800">Magento</span>, 
+            it provides sellers with custom tools while ensuring a smooth shopping experience for customers.
+        </p>
+        <!-- Key Metrics -->
+        <div class="flex flex-wrap gap-6 mb-6 justify-center md:justify-start">
+            <div class="bg-pink-100 px-4 py-2 rounded-lg font-semibold text-pink-900 shadow-sm">
+                50+ Sellers
+            </div>
+            <div class="bg-pink-100 px-4 py-2 rounded-lg font-semibold text-pink-900 shadow-sm">
+                2000+ Products
+            </div>
+            <div class="bg-pink-100 px-4 py-2 rounded-lg font-semibold text-pink-900 shadow-sm">
+                10k+ Monthly Visitors
+            </div>
+        </div>
+        <!-- CTA -->
+        <div class="flex flex-wrap justify-center md:justify-start gap-4">
+            <a href="https://pinkshop.com" target="_blank"
+                class="bg-pink-700 hover:bg-pink-800 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition transform hover:scale-105">
+                Visit Website
+            </a>
+        </div>
+    </div>
+
+    <!-- Right Image -->
+    <div
+        class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border border-gray-100 transform hover:scale-105 transition duration-500">
+        <img src="/static/images/baby1.jpg" alt="PinkShop Dashboard" class="w-96 h-full object-cover">
+        <div class="absolute inset-0 bg-black/20"></div>
+    </div>
+</div>
+
+<div class="max-w-7xl mx-auto px-6 lg:px-12 pb-16 font-sans">
+
+    <!-- Overview Section -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 mb-24">
+        <!-- Images -->
+        <div class="space-y-8">
+            <div class="rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                <img src="/static/images/baby-shoppers.png" alt="Dashboard" class="w-full h-full">
+            </div>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="rounded-2xl overflow-hidden shadow-md border border-gray-100">
+                    <img src="/static/images/baby2.webp" alt="Mobile view" class="w-full h-80 object-cover">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-md border border-gray-100">
+                    <img src="/static/images/baby3.jpg" alt="Design details" class="w-full h-80 object-cover">
+                </div>
+            </div>
+        </div>
+
+        <!-- Client Needs / Solution -->
+        <div class="flex flex-col justify-center space-y-10">
+            <div class="bg-white border border-gray-100 rounded-2xl shadow-md p-8">
+                <h2 class="flex items-center text-2xl font-semibold text-gray-900 mb-4">
+                    <i class="fas fa-user-check text-pink-700 mr-3"></i> Client Needs
+                </h2>
+                <p class="text-gray-600 mb-6">
+                    The client required a vibrant and user-friendly marketplace to increase engagement, streamline checkout, 
+                    and support multiple vendors seamlessly.
+                </p>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start"><i class="fas fa-check-circle text-pink-700 mt-1 mr-2"></i> Modern, responsive design</li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-pink-700 mt-1 mr-2"></i> Quick checkout process</li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-pink-700 mt-1 mr-2"></i> Multi-vendor management</li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-pink-700 mt-1 mr-2"></i> Advanced product search</li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-pink-700 mt-1 mr-2"></i> Analytics dashboard</li>
+                </ul>
+            </div>
+
+            <div class="bg-white border border-gray-100 rounded-2xl shadow-md p-8">
+                <h2 class="flex items-center text-2xl font-semibold text-gray-900 mb-4">
+                    <i class="fas fa-lightbulb text-pink-500 mr-3"></i> Our Solution
+                </h2>
+                <p class="text-gray-600 mb-6">
+                    Delivered a fully responsive platform with an intuitive checkout, smart recommendations, and vendor-friendly tools, improving conversions and engagement.
+                </p>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start"><i class="fas fa-star text-pink-300 mt-1 mr-2"></i> Redesigned UI/UX for better user journey</li>
+                    <li class="flex items-start"><i class="fas fa-star text-pink-300 mt-1 mr-2"></i> Real-time vendor and inventory integration</li>
+                    <li class="flex items-start"><i class="fas fa-star text-pink-300 mt-1 mr-2"></i> Personalized recommendation engine</li>
+                    <li class="flex items-start"><i class="fas fa-star text-pink-300 mt-1 mr-2"></i> One-click checkout with multiple payment options</li>
+                    <li class="flex items-start"><i class="fas fa-star text-pink-300 mt-1 mr-2"></i> Custom analytics dashboard</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-4">Want to launch your marketplace?</h2>
+        <p class="text-gray-600 max-w-xl mx-auto mb-8">
+            Partner with us to create a vibrant, multi-vendor e-commerce platform that stands out.
+        </p>
+        <a href="/contact"
+            class="inline-block bg-pink-600 hover:bg-pink-700 text-white font-semibold py-3 px-10 rounded-full transition">
+            Get in Touch
+        </a>
+    </div>
+</div>
+
+{% endblock %}

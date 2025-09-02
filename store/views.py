@@ -1,5 +1,8 @@
+
 from django.shortcuts import render
 
+def contact_success_view(request):
+    return render(request, 'contact/success.html')
 def homePage(request):
     return render(request, "home.html")
 
@@ -25,3 +28,8 @@ def consultance(request):
 def ecommerce(request):
      return render(request, "ecommerce.html")
 
+def atpohor(request):
+     return render(request, "atpohor.html")
+
+def baby(request):
+     return render(request, "baby.html")

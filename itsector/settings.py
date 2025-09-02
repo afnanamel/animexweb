@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     # Custom apps
     'store',
 ]
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
