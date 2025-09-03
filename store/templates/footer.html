@@ -316,7 +316,26 @@ document.addEventListener("DOMContentLoaded", () => {
         bar.style.setProperty("--progress-width", target);
     });
 });
+ {% comment %}   portfolio detailed li {% endcomment %}
+     const filterButtons = document.querySelectorAll("[data-filter]");
+    const items = document.querySelectorAll(".portfolio-item");
 
+    filterButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const category = button.getAttribute("data-filter");
+
+            items.forEach(item => {
+                if (category === "all" || item.getAttribute("data-category") === category) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+
+            filterButtons.forEach(btn => btn.classList.remove("bg-blue-100", "text-blue-500"));
+            button.classList.add("bg-blue-100", "text-blue-500");
+        });
+    });
     </script>
     
 
